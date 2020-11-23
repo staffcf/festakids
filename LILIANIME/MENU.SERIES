@@ -320,7 +320,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[B][COLOR white][makelist2.param1]  Episodio:  [makelist2.param2][/B][/COLOR]</title>
   <link>$doregex[j63]</link>
-<thumbnail>[makelist1.param2]</thumbnail>
+<thumbnail>https://i.imgur.com/O4mRkWp.jpg</thumbnail>
 <fanart>https://i.imgur.com/Ifecd8c.jpg</fanart>
     <info></info>
 ]]></listrepeat>
@@ -338,7 +338,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[B][COLOR white][j63.param1][/COLOR][/B]</title>
   <link>$doregex[j63Url]</link>
-<thumbnail>[makelist1.param2]</thumbnail>
+<thumbnail>https://i.imgur.com/O4mRkWp.jpg</thumbnail>
 <fanart>https://i.imgur.com/Ifecd8c.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[(Fembed|Okru|YourUpload|Verystream|Rapidvideo|Maru)","(https:\\/\\/.*?)"]]></expres>
