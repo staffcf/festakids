@@ -5,7 +5,7 @@
 
 
 <item>
-<title>[COLOR white][COLOR orange]BUSCADOR[COLOR orange][/COLOR] </title>
+<title>[COLOR white][COLOR orange]BUSCADOR [COLOR white]Series[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 <regex>
 <name>img1</name>
@@ -277,7 +277,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 <title>[COLOR orange]ANIME FLV [COLOR white]WEB[/COLOR]</title> 
 <externallink>https://pastebin.com/raw/jaMXCkvu$$LSProEncKey= $$</externallink> 
 <link>na</link> 
-<thumbnail>https://i.imgur.com/O4mRkWp.jpg</thumbnail>
+<thumbnail>https://i.imgur.com/YcK18g4.jpg</thumbnail>
 <fanart>https://i.imgur.com/SKvCy0e.jpg</fanart>
 </item>
 
