@@ -3,7 +3,7 @@
 
 
 <item>
-<title>[COLOR orange]Dragon Ball [COLOR white]Euskera[/COLOR]</title>
+<title>[COLOR orange]Dragon Ball [COLOR white]Series[/COLOR]</title>
 <link>$doregex[cristal_series]</link>
 <regex>
 <name>cristal_series</name>
@@ -67,3 +67,10 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 
 
 
+<item> 
+<title>[COLOR orange]Dragon Ball [COLOR white]Ovas [COLOR cartreuse](Proximamente)[/COLOR]</title>
+<externallink>https://friendpaste.com/3dhMmLA4J99d2lEmH9UXY9/raw</externallink> 
+<link>na</link> 
+<thumbnail>https://i.imgur.com/1AzJu2T.jpg</thumbnail>
+<fanart>https://i.imgur.com/0D8Ft2R.jpg</fanart>
+</item>
