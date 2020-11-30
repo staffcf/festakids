@@ -12,7 +12,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
    import resolveurl
 
-   url = 'https://ok.ru/video/2044447689380'
+   url = 'https://ok.ru/video/2044667562660'
 
    try:
 
