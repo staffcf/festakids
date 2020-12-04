@@ -3,7 +3,7 @@
 
 
 <item>
-<title>[COLOR orange]Dragon Ball [COLOR white]Series[/COLOR]</title>
+<title>[COLOR orange]Dragon Ball [COLOR white]Latino[/COLOR]</title>
 <link>$doregex[cristal_series]</link>
 <regex>
 <name>cristal_series</name>
