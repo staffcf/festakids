@@ -146,7 +146,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 
 
 <item>
-<title>[COLOR orange]SERIESPAPAYA [COLOR white]Web[/COLOR] </title>
+<title>[COLOR orange]ANIMEPAPAYA [COLOR white]Series[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 <regex>
 <name>makelist2</name>
