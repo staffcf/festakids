@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
+<title>[B][COLOR gold]VUESTRAS CREACIONES[/COLOR][/B]</title>
+<link>http://ignorame</link>
+<thumbnail>https://i.imgur.com/fcMtyL0.png</thumbnail>
+<fanart>https://i.imgur.com/PAjbyGX.jpg</fanart>
+<externallink>https://pastebin.com/raw/H2TAs5Fs</externallink>
+</item>
+
+
+<item>
 <title>[B][COLOR red]DIA 01[/COLOR] [COLOR white]MENSAJE DE PAPA NOEL[/COLOR][/B]</title>
 <link>$doregex[id3]</link>
 <regex>
