@@ -10,7 +10,7 @@
 
 
 
-
+<!--
 <item>
 <title>[COLOR gold]*[/COLOR] [COLOR darkgoldenrod]Cine [COLOR bisque]Estrenos[/COLOR]</title>  
 <link>$doregex[c]</link>
@@ -53,11 +53,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://i.imgur.com/yi8Tc77.png</thumbnail>
 <fanart>https://i.imgur.com/RsLj1lh.jpg</fanart>
 </item>
-
+-->
 
 
 <item>
-<title>[COLOR gold]*[/COLOR] [COLOR darkgoldenrod]Cine [COLOR bisque]Cartelera[/COLOR]</title>  
+<title>[COLOR gold]*[/COLOR] [COLOR darkgoldenrod]Cine [COLOR bisque]Estrenos[/COLOR]</title>  
 <link>$doregex[c]</link>
 <regex>
 <name>c</name>
