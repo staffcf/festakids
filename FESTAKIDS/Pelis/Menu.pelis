@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>[B][COLOR darkgoldenrod]** [COLOR yellow]Grupo Telegram[COLOR deepskyblue] @addonfestaycristal [/COLOR][/B]</title>
+<title>[B][COLOR darkgoldenrod]* [COLOR yellow]Grupo Telegram[COLOR deepskyblue] @addonfestaycristal [/COLOR][/B]</title>
 <link>NOLINK</link>
 <thumbnail>https://i.imgur.com/pmv3nZ0.png<thumbnail>
 <fanart>https://i.imgur.com/r2bQyc9.jpg</fanart>
@@ -345,7 +345,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 
 
 
-<item>
+<tem>
 <title>[COLOR gold]*[/COLOR] [COLOR darkgoldenrod]Cine [COLOR bisque]Barbie [COLOR yellow][/COLOR]</title>
 <link>$doregex[lou]</link>
 <jsonrpc>plugin://plugin.video.festakids/?url=https%3a%2f%2fi.imgur.com%2fWhYxD4X.jpg&amp;mode=17&amp;regexs=%7bu%27c%27%3a%20%7b%27listrepeat%27%3a%20u%27%5cr%5cn%3ctitle%3e%5bc.param1%5d%3c%2ftitle%3e%5cr%5cn%3cgenre%3e%5bc.param2%5d%3c%2fgenre%3e%5cr%5cn%3cyear%3e%5bc.param3%5d%3c%2fyear%3e%5cr%5cn%3cinfo%3e%5bc.param6%5d%3c%2finfo%3e%5cr%5cn%3clink%3e%24doregex%5bid3%5d%3c%2flink%3e%5cr%5cn%3cthumbnail%3e%5bc.param4%5d%3c%2fthumbnail%3e%5cr%5cn%3cfanart%3e%5bc.param5%5d%3c%2ffanart%3e%5cr%5cn%27%2c%20%27expres%27%3a%20u%27(%3fs)%3ctitle%3e(.%2a%3f)%3c.%2a%3fgenre%3e(.%2a%3f)%3c.%2a%3fyear%3e(.%2a%3f)%3c.%2a%3fthumbnail%3e(.%2a%3f)%3c.%2a%3ffanart%3e(.%2a%3f)%3c.%2a%3finfo%3e(.%2a%3f)%3curlsolve%3e(.%2a%3f)%3c.%2a%3f%27%2c%20%27name%27%3a%20u%27c%27%2c%20%27page%27%3a%20u%27https%3a%2f%2fpastebin.com%2fraw%2f13vUBBjP%27%7d%2c%20u%27id3%27%3a%20%7b%27expres%27%3a%20u%22%23%24pyFunction%5cr%5cndef%20GetLSProData(page_data%2cCookie_Jar%2cm)%3a%5cr%5cn%20%20%20%20import%20urlresolver%5cr%5cn%20%20%20%20url%20%3d%20%27%5bc.param7%5d%27%5cr%5cn%20%20%20%20try%3a%5cr%5cn%20%20%20%20%20%20%20%20u%20%3d%20urlresolver.resolve(url)%5cr%5cn%20%20%20%20except%3a%5cr%5cn%20%20%20%20%20%20%20%20u%20%3d%20%27%5bc.param7%5d%27.replace(%27https%3a%2f%2fdrive.google.com%2ffile%2fd%2f%27%2c%20%27https%3a%2f%2fwww.googleapis.com%2fdrive%2fv3%2ffiles%2f%27).replace(%27%2fview%27%2c%20%27%3falt%3dmedia%26key%3dAIzaSyDdoetN4aDmDBc6Y11CUGK4nhZ0pvZbXOw%27)%5cr%5cn%20%20%20%20return%20u%5cr%5cn%22%2c%20%27name%27%3a%20u%27id3%27%2c%20%27page%27%3a%20None%7d%7d&amp;url=%24doregex%5bc%5d<jsonrpc>
