@@ -151,7 +151,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
  
  
 <item>
-<title>[B][COLOR darkgoldenrod]* [COLOR white]ESPECIAL DRAGON BALL [COLOR yellow](REPARADO)[/COLOR][/B]</title>
+<title>[B][COLOR darkgoldenrod]* [COLOR white]ESPECIAL DRAGON BALL [COLOR yellow][/COLOR][/B]</title>
 <link>cristalazul</link>
 <externallink>$doregex[c]</externallink>
 <regex>
