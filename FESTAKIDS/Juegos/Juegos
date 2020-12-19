@@ -3,7 +3,7 @@
  
 
 <item>
- <title>[COLOR white]JUST DANCE KIDS[/COLOR]</title>
+ <title>[COLOR yellow]JUST DANCE KIDS[/COLOR]</title>
  <link>$doregex[link_inteligente]</link>
 <regex>
 <name>link_inteligente</name>
@@ -81,7 +81,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[COLOR white]JUST DANCE KIDS II[/COLOR]</title>
+ <title>[COLOR deeppink]JUST DANCE KIDS II[/COLOR]</title>
 <link>$doregex[link_inteligente]</link>
 <regex>
 <name>link_inteligente</name>
@@ -161,7 +161,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[COLOR white]DISNEY PARTI I[/COLOR]</title>
+ <title>[COLOR deepskyblue]DISNEY PARTI I[/COLOR]</title>
 <link>$doregex[link_inteligente]</link>
 <regex>
 <name>link_inteligente</name>
@@ -234,7 +234,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[COLOR white]DISNEY PARTI II[/COLOR]</title>
+ <title>[COLOR lime]DISNEY PARTI II[/COLOR]</title>
 <link>$doregex[link_inteligente]</link>
 <regex>
 <name>link_inteligente</name>
@@ -309,7 +309,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 <item>
-<title>[B][COLOR chartreuse]FESTA TUBERIAS[/COLOR][/B]</title>
+<title>[B][COLOR orange]FESTA TUBERIAS[/COLOR][/B]</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://script.game.netwalk/</jsonrpc>
 <thumbnail>https://i.imgur.com/kNZgWGa.png</thumbnail>
@@ -320,7 +320,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 <item>
-<title>[B][COLOR yellow]YAHTZEE[/COLOR][/B]</title>
+<title>[B][COLOR pink]YAHTZEE[/COLOR][/B]</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://script.game.yahtzee/</jsonrpc>
 <thumbnail>https://i.imgur.com/8o4Cdmf.jpg</thumbnail>
@@ -330,7 +330,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 <item>
-<title>[B][COLOR pink]FESTA AJEDREZ [COLOR yellow](solo en kodi 17)[/COLOR][/B]</title>
+<title>[B][COLOR aqua]FESTA AJEDREZ [COLOR yellow](solo en kodi 17)[/COLOR][/B]</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://plugin.script.afestaajedrez/</jsonrpc>
 <thumbnail>https://i.imgur.com/fg952Jr.jpg</thumbnail>
