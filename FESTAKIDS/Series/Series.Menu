@@ -228,7 +228,7 @@ sólo da acesso a ésas webs, éstas son las responsables de los contenidos"[/CO
 
 
 <item>
-<title>[B][COLOR darkgoldenrod]* [COLOR white]SERIES INFANTILES[/COLOR] </title>
+<title>[B][COLOR darkgoldenrod]* [COLOR white]SERIES INFANTILES[/COLOR] [/B]</title>
 <link>$doregex[makelist2]</link>
 <regex>
 <name>makelist2</name>
@@ -356,7 +356,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 
 
 <item>
-<title>[B][COLOR darkgoldenrod]* [COLOR white]SERIES  JUVENILES[/COLOR] </title>
+<title>[B][COLOR darkgoldenrod]* [COLOR white]SERIES  JUVENILES[/COLOR] [/B]</title>
 <link>$doregex[makelist2]</link>
 <regex>
 <name>makelist2</name>
