@@ -1,5 +1,162 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
+
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Barrio Sésamo[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=NYvt_9Kh4gA&list=PLww09CxR_lB6HU5eqnvGuulqtkwI8wJmq'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Versión española del popular "Sesame Street" estadounidense. Consistía en un formato de tele-teatro con personajes propios, que incluía aparte los sketches doblados del programa americano. La primera temporada transcurrió entre 1979 y 1980, contando con la gallina Caponata como principal guiñol junto con el caracol Pérez Gil. Emma Cohen era la actriz disfrazada que interpretó a Caponata mientras que a Pérez Gil lo interpretó Jesús Alcaide. Además de estos, pudimos ver a José Riesgo como actor habitual interpretando a Julián el quiosquero. Luego llegarían Espinete, Don Pimpón o Chema el panadero. </info>
+<thumbnail>https://i.imgur.com/QtfVymS.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Coleccion Erase una vez...[/COLOR]</title>
+<externallink>https://pastebin.com/raw/y4YRwQQL</externallink>
+<link>na</link>
+<thumbnail>https://i.imgur.com/EGg5ULS.jpg<thumbnail>
+<fanart>https://i.imgur.com/KFAuyll.jpg</fanart>
+<info>Versión española del popular "Sesame Street" estadounidense. Consistía en un formato de tele-teatro con personajes propios, que incluía aparte los sketches doblados del programa americano. La primera temporada transcurrió entre 1979 y 1980, contando con la gallina Caponata como principal guiñol junto con el caracol Pérez Gil. Emma Cohen era la actriz disfrazada que interpretó a Caponata mientras que a Pérez Gil lo interpretó Jesús Alcaide. Además de estos, pudimos ver a José Riesgo como actor habitual interpretando a Julián el quiosquero. Luego llegarían Espinete, Don Pimpón o Chema el panadero. </info>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Cleo y Cuquin[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=BBuczQ9obOw&list=PL3XM41_Fq_spssfyOavoXCGdE6pcH79cF'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Cleo y Cuquin, la mayor y el bebé de la familia Telerín, son los protagonistas. En cada episodio, los niños vivirán una pequeña gran aventura en la que Cuquin con sus travesuras originará un conflicto o meterá en problemas a Cleo y sus hermanos, que lo resolverán de la mejor manera que puede hacerlo un niño: jugando. Al final de cada episodio Cleo descubrirá qué quiere ser de mayor.</info>
+<thumbnail>https://i.imgur.com/FusLfje.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+
 <item>
 <title>[COLOR orange]+ [COLOR white]Conan, el niño del futuro[/COLOR]</title>>
 <link>$doregex[lou]</link>
@@ -46,7 +203,200 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <info>Serie de TV (1978). 26 episodios. La acción trascurre 20 años después de la tercera guerra mundial. La raza humana y la tecnología han sido prácticamente borradas de la faz de la tierra por los terremotos y tsunamis provocados por el uso de armas magnéticas. Conan y su abuelo habitan en un tranquilo atolón, la Isla Perdida, creyéndose solos en el mundo, hasta que una muchacha llamada Lana aparece desvanecida en la playa, perseguida por unos soldados que intentarán llevársela por la fuerza. Esto cambiará drásticamente la vida de Conan y le llevará a correr las más increíbles aventuras para tratar de rescatar a su nueva amiga de las garras de los egoístas y peligrosos hombres de la Ciudad de Industria, que ansían hacerse con el secreto de la energía solar y así poder controlar lo que queda de la civilización humana... Es la primera serie dirigida por el prestigioso Hayao Miyazaki.</info>
 </item>
 
+--------------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Comando G[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=hBa1yp0uDoM&list=PLKXN6nw9Z7Hs4-BXD7AKjKx97EdtgAnPe'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Serie de TV (1978-1985). 105 episodios. Mítica serie de animación que hizo furor en los años 80. Comando G lo componen cinco jóvenes huérfanos encargados de salvar la Tierra y otros planetas de la Federación Intergaláctica.</info>
+<thumbnail>https://i.imgur.com/dUzZulQ.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Dartacan Y Los Tres Mosqueperros[/COLOR]</title>
+<link>$doregex[lou]</link>
+<regex>
+<name>lou</name>
+<listrepeat><![CDATA[
+<title>[lou.param2] [lou.param1]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[lou.param4]</thumbnail>
+<fanart>[lou.param5]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)<title>(.*?)-.*?(.*?)<.*?urlsolve>(.*?)<.*?thumbnail>(.*?)<.*?fanart>(.*?)<.*?]]></expres>
+<page>https://pastebin.com/raw/EprWP9dT</page>
+</regex>
+<regex>
 
+<name>id3</name>
+
+<expres><![CDATA[#$pyFunction
+
+def GetLSProData(page_data,Cookie_Jar,m):
+
+   import resolveurl
+
+   url = '[lou.param3]'
+
+   try:
+
+       u = resolveurl.resolve(url)
+
+   except:
+
+       u = ''
+
+   return u
+
+]]></expres>
+
+<page></page>
+
+</regex>
+<thumbnail>https://i.imgur.com/teM83iB.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpgg</fanart>
+<info>Serie de TV (1981-1982). 26 episodios. Popular serie de dibujos animados de los años ochenta que seguía las andanzas de los personajes de Alejandro Dumas caracterizados como simpáticos perros: D'Artacán, Pontos, Dogos y Amis. En 1990 contó con una secuela, "El retorno de D'Artacan". </info>
+</item>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]David El Gnomo[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=B7LQTER3De0&list=PLpSWLIHTG6ifGirFHPCUzX2K1C3kPJr4L'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Serie de TV (1985). 26 episodios. Serie infantil de dibujos animados que narra las aventuras de David, un gnomo de los bosques que gracias a sus conocimientos de las plantas medicinales cura a los gnomos de sus enfermedades, y a los animales heridos. Por ello, David es llamado desde todas las partes del mundo para resolver casos médicos difíciles. Hasta los gnomos reyes solicitan su consejo. Durante sus viajes, David y sus colaboradores y amigos tienen que lidiar con peligros y dificultades como trolls, monstruos, incendios, inundaciones, sequías, frío, calor... y, a veces incluso, los seres humanos. "Nadie es mejor por ser más grande". </info>
+<thumbnail>https://i.imgur.com/SBoKvLH.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
 <item>
 <title>[COLOR orange]+ [COLOR white]Don gato y su pandilla[/COLOR]</title>>
 <link>$doregex[lou]</link>
@@ -92,22 +442,698 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://i.imgur.com/KFAuyll.jpg</fanart>
 <info>Serie de TV (1961-1962). 30 episodios. Clásica serie de la factoría Hanna-Barbera. El protagonista, Don Gato (Top Cat), es el líder de una pandilla de gatos callejeros en Manhattan: Panza (Fancy-Fancy), Espanto (Spook), Benito Bodoque (Benny The Ball), Demóstenes (Brain) y Cucho (Choo-Choo). Por su parte, el Oficial Matute (Officer Charlie Dibble), policía del barrio, trata infructuosamente de atraparlos y llevarlos a la cárcel. Uno de los motivos para el arresto era que Don Gato trataba de utilizar un teléfono como propio pero que era propiedad de la policía.</info>
 </item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]El Inspector Gadget[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=wm9WH0sIvos&list=PLvYBBKWmrGw52E2ZPLDB5hKNbnKcbOV8Z'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Serie de TV (1983-1986). 2 temporadas. 86 episodios. Serie de dibujos animados protagonizada por un detective torpe y despistado, el Inspector Gadget, que es además un cyborg equipado con varios artilugios (gadgets) colocados por todo su cuerpo. Su principal enemigo es el Dr. Gang, líder de la malvada organización MAD. </info>
+<thumbnail>https://i.imgur.com/ljr6iIA.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Fraguel Rock[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=n5YlgYkHqhI&list=PLKXN6nw9Z7HvaN0NjeLtwf0eKwZxfP4ef'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Serie de TV (1987-1988). 1 temporada. 13 episodios. Versión animada de la popular serie de los muñecos "Fraggle Rock". Como en la original, los Fraggles son un grupo de extrañas criaturas que viven bajo tierra con Doozers, adictos al trabajo, siempre intentando de evitar al gigante de garganta y a la gente del mundo humano. </info>
+<thumbnail>https://i.imgur.com/dps0OA7.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Heidi[COLOR white][/COLOR]</title>
+<link>$doregex[lou]</link>
+<jsonrpc>plugin://plugin.video.festakids/?iconimage=https%3a%2f%2fi.imgur.com%2fnsTIq4j.jpg&amp;mode=17&amp;regexs=%7bu%27id3%27%3a%20%7b%27expres%27%3a%20u%22%23%24pyFunction%5cr%5cn%5cr%5cndef%20GetLSProData(page_data%2cCookie_Jar%2cm)%3a%5cr%5cn%5cr%5cn%20%20%20import%20urlresolver%5cr%5cn%5cr%5cn%20%20%20url%20%3d%20%27http%3a%2f%2fok.ru%2fvideo%2f%5blou.param1%5d%27%5cr%5cn%5cr%5cn%20%20%20try%3a%5cr%5cn%5cr%5cn%20%20%20%20%20%20%20u%20%3d%20urlresolver.resolve(url)%5cr%5cn%5cr%5cn%20%20%20except%3a%5cr%5cn%5cr%5cn%20%20%20%20%20%20%20u%20%3d%20%27%27%5cr%5cn%5cr%5cn%20%20%20return%20u%5cr%5cn%5cr%5cn%22%2c%20%27name%27%3a%20u%27id3%27%2c%20%27page%27%3a%20None%7d%2c%20u%27lou%27%3a%20%7b%27listrepeat%27%3a%20u%27%5cr%5cn%3ctitle%3e%5bCOLOR%20white%5d%5blou.param2%5d%20%5bCOLOR%20gold%5d%5blou.param3%5d%20%5b%2fCOLOR%5d%3c%2ftitle%3e%5cr%5cn%3clink%3e%24doregex%5bid3%5d%3c%2flink%3e%5cr%5cn%3cthumbnail%3ehttps%3a%2f%2fi.imgur.com%2fnsTIq4j.jpg%3c%2fthumbnail%3e%5cr%5cn%3cfanart%3ehttps%3a%2f%2fi.imgur.com%2fKFAuyll.jpg%3c%2ffanart%3e%5cr%5cn%27%2c%20%27expres%27%3a%20u%27(%3fs)movie%22%20data-id%3d%22(.%2a%3f)%22.%2a%3fopen_album%22%20title%3d%22(.%2a%3f)-.%2a%3f(.%2a%3f)%22.%2a%3f%27%2c%20%27name%27%3a%20u%27lou%27%2c%20%27page%27%3a%20u%27https%3a%2f%2fpastebin.com%2fraw%2fGk2iDaSX%27%7d%7d&amp;url=%24doregex%5blou%5d</jsonrpc>
+<info>Serie de TV (1974). 52 episodios. Las aventuras de Heidi comienzan cuando la niña es enviada a vivir con su abuelito, un viejo gruñón que vive en los Alpes suizos. Poco a poco, el anciano le va cogiendo cariño a su nieta, que vive innumerables aventuras con sus amigos, Pedro y Clara, el perro "Niebla" y la pequeña cabra "Copito de Nieve". El diseño del personaje corrió a cargo de Hayao Miyazaki. </info>
+<thumbnail>https://i.imgur.com/nsTIq4j.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
 
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]La Abeja Maya[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=mvSGsGnlP_A&list=PLBy6KvkIQY3-gnseSPBLQi9CCbuZ3MZA-'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Serie TV (1975-1976). 55 episodios. Maya es una abejita curiosa que deberá aprender a vivir en armonía junto a los demás insectos. Maya siempre va acompañada de muy buenos amigos como Willy, Flip el Saltamontes, el gusano Max y la mosca Puck, entre otros. Serie de TV anime japonesa producida por la compañía Nippon Animation, basada en un clásico libro infantil de Waldemar Bonsels. Inicialmente se hicieron 55 episodios emitidos por la cadena TV Asahi entre abril de 1975 y abril de 1976. Posteriormente en 1979 se realizaron diversos capítulos más por la compañía de animación Wako Production. Obtuvo un gran éxito en numerosos países -en Estados Unidos la serie fue emitida por la cadena Nickelodeon, y en España por TVE-, logrando resposiciones en numerosas cadenas de televisión de multitud de países que hicieron las delicias de los más pequeños. </info>
+<thumbnail>https://i.imgur.com/Wd1jvKS.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
 
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]La Vuelta Al Mundo De Willy Fog[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=7zrwehDOWas&list=PLpSWLIHTG6idp8jfwtmXsU6iLVYUrhbnV'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Serie de TV (1981-1982). 26 episodios. Willy Fog es un londinense millonario que se apuesta con sus colegas que será capaz de dar la vuelta al mundo en tan sólo ochenta días. Acompañado por sus fieles amigos Rigodón y Tico, Willy Fog viajará de punta a punta, sorteando innumerables peligros, enamorándose de la bella Robin y luchando contra numerosos enemigos, como el inspector Fix o Mr. Sullivan. </info>
+<thumbnail>https://i.imgur.com/8h3bkNY.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Las aventuras de Sherezade[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=K3zVPg81Occ&list=PLoVyN-E1g6K8tANBf7vWyLXfTXMYt35oI'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>En una extraña noche estrellada, la princesa Sheherazade libera un travieso genio que había estado encerrado en una prisión en una habitación de cristal. A partir de ese momento ambos se convertirán en inseparables, viajando juntos a lo largo del planeta. Las aventuras que comparten se inspiran en las antologías de cuentos orientales y leyendas fantásticas, dándole un tratamiento moderno de imaginación y humor para los niños.</info>
+<thumbnail>https://i.imgur.com/JiYE1KH.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Las Aventuras de Tom Sawyer[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=VC1TSvgPJJo&list=PLKXN6nw9Z7HtqFjXzIO1P2h2l98Xz6HQd'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Serie de TV (1980). 49 episodios. El huérfano Tom vive con su tía Polly y su primo Sid, un auténtico empollón. Tom es lo contrario a su primo, un niño rebelde y aventurero aunque con un gran corazón, que siempre anda metido en líos. A Tom no le gusta ir a la escuela y siempre que puede se salta las clases. Un día se encuentra con su amigo Huck y, mientras piensan cómo divertirse, escuchan cómo el padre de Huck, Muff Potter, y el indio Joe planean robar una tumba a medianoche... El cuento clásico de Mark Twain convertido en un simpático largometraje de dibujos animados, lleno de aventuras.</info>
+<thumbnail>https://i.imgur.com/2LbS5yZ.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Las Tortugas Ninja[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=IzyaSxoHGJI&list=PLKXN6nw9Z7Ht8rMfUfwpGD1XpG6Y1q8Uv&index=106'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Serie de TV (1987-1996). 193 episodios. Son grandes, son verdes, son auténticas máquinas de combate y les encanta la pizza.... ¡Son las Tortugas Ninja! Miguel Ángel, Leonardo, Rafael y Donatello son los nombres de estas jóvenes tórtugas mutantes entrenadas por su sensei Splinter, una rata mutada como ellos que les enseñó todo tipo de técnicas de combate desde que eran pequeños. Juntos luchan contra el mal y contra su archienemigo, el malvado Shredder.</info>
+<thumbnail>https://i.imgur.com/2r52tuS.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
 
 <item>
-<title>[COLOR orange]+ [COLOR white]Heidi[/COLOR]</title>>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Los Diminutos[/COLOR]</title>
+<externallink>https://pastebin.com/raw/E0qRxY9r$$LSProEncKey= $$</externallink>
+<link>na</link>
+<thumbnail>https://i.imgur.com/n6y17XG.jpg<thumbnail>
+<fanart>https://i.imgur.com/KFAuyll.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Los Pitufos[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=V_x8lySYwrU&list=PLKXN6nw9Z7HuB9XefG-Yy0doqemtq5cvV'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Serie de TV (1981-1989). 427 episodios. Basada en unas historietas del belga Pierre Culliford (AKA Peyo) y ambientada en la Edad Media. En la aldea de los pitufos todas las casas son hongos o setas. Todos ellos se visten igual: pantalón blanco y gorro frigio blanco, a excepción del Gran Pitufo o Papá Pitufo, que usa un atuendo rojo. Él es el jefe de la aldea, debido a su avanzada edad y a sus conocimientos de magia.
+El brujo Gargamel y su gato Azrael, intentan siempre y por todos los medios capturar a los pitufos con trampas. Los objetivos son dos: utilizarlos como ingrediente imprescindible para conseguir la transmutación de los metales y su transformación en oro, y preparar con ellos 'sopa de pitufos', un legendario plato exquisito de sabor incomparable. La serie se ramificó en varias películas; la última, que se estrenó en 2008, celebraba el 50º aniversario de los personajes.</info>
+<thumbnail>https://i.imgur.com/Ng0a5MU.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Los Trotamusicos[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=PXwVCk3djXc&list=PLKXN6nw9Z7Hu4L3KpnWM6TefxSZZ5bemJ'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>La serie sigue la historia de cuatro animales amigos: el valeroso gallo Koki, el cándido burro Tonto, el sagaz perro Lupo y el gato Burlón, que forman un grupo musical en el que tocan respectivamente la guitarra, la batería, la trompeta y el saxofón (extraído de Wikipedia).</info>
+<thumbnail>https://i.imgur.com/urcYHq6.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Marco[COLOR white][/COLOR]</title>
 <link>$doregex[lou]</link>
 <regex>
 <name>lou</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][lou.param2] [COLOR gold][lou.param3] [/COLOR]</title>
+<title>[lou.param2] [lou.param1]</title>
 <link>$doregex[id3]</link>
-<thumbnail><thumbnail>
-<fanart></fanart>
+<thumbnail>[lou.param4]</thumbnail>
+<fanart>[lou.param5]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)movie" data-id="(.*?)".*?open_album" title="(.*?)-.*?(.*?)-.*?]]></expres>
-<page>https://pastebin.com/raw/Gk2iDaSX</page>
+<expres><![CDATA[(?s)<title>(.*?)-.*?(.*?)<.*?urlsolve>(.*?)<.*?thumbnail>(.*?)<.*?fanart>(.*?)<.*?]]></expres>
+<page>https://pastebin.com/raw/9QQqPVVp</page>
 </regex>
 <regex>
 
@@ -119,7 +1145,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
    import resolveurl
 
-   url = 'http://ok.ru/video/[lou.param1]'
+   url = '[lou.param3]'
 
    try:
 
@@ -136,74 +1162,303 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 
 </regex>
-<thumbnail>https://i.imgur.com/nvUilm3.jpg</thumbnail>
-<fanart>https://i.imgur.com/KFAuyll.jpg</fanart>
-<info>Serie de TV (1974). 52 episodios. Las aventuras de Heidi comienzan cuando la niña es enviada a vivir con su abuelito, un viejo gruñón que vive en los Alpes suizos. Poco a poco, el anciano le va cogiendo cariño a su nieta, que vive innumerables aventuras con sus amigos, Pedro y Clara, el perro "Niebla" y la pequeña cabra "Copito de Nieve". El diseño del personaje corrió a cargo de Hayao Miyazaki.</info>
+<info>Serie de TV (1976). 52 episodios. Ambientada a finales del siglo XIX. Marco es un niño que vive en Génova. La grave crisis económica que atraviesa Italia obliga a su madre a emigrar a Argentina. Pero, pasado cierto tiempo, deja de escribir, por lo que Marco, acompañado de su mono Amedio, decide ir a buscarla y traerla de vuelta a Italia.</info>
+<thumbnail>https://i.imgur.com/PZR4E4h.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
 </item>
 
-
-
-
-
+---------------------------------------------------------------------------------------------------------
 <item>
-<title>[COLOR orange]+[/COLOR] [COLOR white]Pippi Calzaslargas[/COLOR]</title>
-<link>$doregex[makelist]</link>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Mofli, el último koala[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
 <regex>
-<name>makelist</name>
+<name>link_inteligente</name>
 <listrepeat><![CDATA[
-<title>[COLOR pink]+[/COLOR][COLOR white][makelist.param1][/COLOR]</title>
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
 <link>$doregex[id]</link>
-<thumbnail>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</thumbnail>
-<fanart>https://i.imgur.com/q6mKJ3A.jpg</fanart>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
 ]]></listrepeat>
-<expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
-<page>https://www.youtube.com/watch?v=imw7swPht-E&amp;list=PLy8snGCMuyCDxfA7zl_hqvcLwbLYtKL9y</page>
- <cookieJar></cookieJar>
-</regex>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=r36qR73huI0&list=PLKXN6nw9Z7Ht3nYK0RoBT_Jrrbo6nlmMt'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
 <regex>
 <name>id</name>
 <expres><![CDATA[#$pyFunction
-import re,urlresolver
+import resolveurl
 def GetLSProData(page_data,Cookie_Jar,m):
-  return urlresolver.resolve('https://youtu.be/[makelist.param2]')
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://i.imgur.com/aODKjuV.jpg</thumbnail>
-<fanart>https://i.imgur.com/KFAuyll.jpg</fanart>
-<info>Tiene pequeños poderes, vive con un mono y un caballo, no tiene nadie a quien dar cuentas y sus mejores amigos son Tommy y Annika, dos niños de su edad que asisten fascinados al estallido de libertad y diversión que supone estar con Pippi. 'Pippi Calzaslargas' es una serie de aventuras dirigida a todos los públicos.</info>
+<info>Serie de TV. 13 episodios. A principios del siglo XXI, Bob Detroit, showman y presentador de Mundivisión, informa al mundo de que en algún lugar de Australia sobrevive un pequeño koala, el último de su especie. El pequeño animal, llamado Mofli, pasa a ser el objetivo de un millonario excéntrico y de su caprichosa nieta Rebeca, de un feroz cazador llamado Iván, de Trombonetti y Paolo, una divertida pareja que son propietarios de varios circos, y de el doctor Fool, un singular explorador. En Rivermint, una pequeña localidad australiana, vive Corina. Es la única que conoce el paradero de Mofli y hará todo lo posible para evitar que su amigo termine en las garras de sus perseguidores.</info>
+<thumbnail>https://i.imgur.com/hZZsid7.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
 </item>
-
-
-
-
-
-
+---------------------------------------------------------------------------------------------------------
 <item>
-<title>[COLOR orange]+[/COLOR] [COLOR white]Vicky El Vikingo[/COLOR]</title>
-<link>$doregex[makelist]</link>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Oliver y Benji (Campeones)[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
 <regex>
-<name>makelist</name>
+<name>link_inteligente</name>
 <listrepeat><![CDATA[
-<title>[COLOR pink]+[/COLOR][COLOR white][makelist.param1][/COLOR]</title>
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
 <link>$doregex[id]</link>
-<thumbnail>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</thumbnail>
-<fanart>https://i.imgur.com/q6mKJ3A.jpg</fanart>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
 ]]></listrepeat>
-<expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
-<page>https://www.youtube.com/watch?v=ayHQP9ixtbg&amp;list=PLvyDCUr4HHt3z-6NjZB1Gx-fnvRVn0_E0</page>
- <cookieJar></cookieJar>
-</regex>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=F_nxdEvr2Qs&list=PLKXN6nw9Z7HstOVIA68ZjmvZSQoE3vjG5'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
 <regex>
 <name>id</name>
 <expres><![CDATA[#$pyFunction
-import re,urlresolver
+import resolveurl
 def GetLSProData(page_data,Cookie_Jar,m):
-  return urlresolver.resolve('https://youtu.be/[makelist.param2]')
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://i.imgur.com/XKyDsUt.jpg</thumbnail>
-<fanart>https://i.imgur.com/KFAuyll.jpg</fanart>
-<info>Serie de TV (1974-1975). 78 episodios. Vicky es un espabilado e intrépido niño vikingo, hijo único de Ylva y del jefe del poblado -el bruto y barbudo Halvar-, al que siempre se le ocurren las más imaginativas soluciones para los múltiples problemas y desventuras que les suceden a los guerreros vikingos en sus incursiones, por mar y tierra, contra sus múltiples enemigos.</info>
+<info>Serie de TV (1983-1986). 128 episodios. Serie anime basado en el popular manga homónimo creado por Yoichi Takahashi en 1981. La historia comienza cuando Tsubasa Ozora (Oliver), de 12 años de edad, se muda a Shizuoka. El chaval tiene la ilusión de jugar con el equipo más famoso de esa ciudad: el Shutetsu, en el cual milita el mejor portero de la liga nacional: Genzo Wakabayashi (Benji). Sin embargo, el protagonista tendrá que entrenar duro y jugar agotadores partidos -incluso lesionado- para alcanzar su sueño: ganar el campeonato nacional de fútbol. </info>
+<thumbnail>https://i.imgur.com/fXynQy5.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
 </item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Oliver y Benji (Supercampeones)[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=V7Td0boIWcU&list=PLKXN6nw9Z7Hvi34I2T816RBAHhKMnJq-L'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Serie de TV (1994). 47 Episodios. Serie dividida en 2 partes. La primera que es un remake de Capitan Tsubasa y la segunda nos narra las aventuras de Oliver y los demás 2 años después del último campeonato de Japón. Oliver se encuentra en Brasil (con el Sao Paulo) y consigue ser campeón de la liga brasileña contra su rival Carlos Santana. Por otra parte, en Japón Nankatsu y Toho siguen siendo los dos mejores equipos con Mark y Tom como capitanes. Mientras tanto en Italia, un joven jugador japonés llamado Aoi Shingo (Terry), consigue ser titular en el equipo juvenil del Inter de Milán. Todos estaban listos para las eliminatorias del mundial sub-20, pero el nuevo entrenador japonés, Carter, le quitaría la titularidad a jugadores como Mark, Tom, los gemelos Derrick...(pero con la intención de motivarlos para superarse a ellos mismos). Con dificultades conseguirán ir superando los obstáculos como la fuerte selección Tailandesa. La vuelta de los 7 descartados, junto a Oliver, Benji y Terry hacen pensar que Japón podrá clasificarse e incluso ganar el mundial.</info>
+<thumbnail>https://i.imgur.com/JNIHmcX.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+<item>
+<title>[COLOR orange]+[/COLOR] [COLOR white]Tom y Jerry[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/JLNg3ue.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=EJvXNPT4uD0&list=PLCF4P0UGv7KRmrE-KvO_RLB4gkqpkPbEE'
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
+ 
+  if '=' in url[:7]:
+    if 'canal' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+    elif 'lista' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+    elif 'enlace' in url[:7]:
+        s2 = url + '2018Cristalazul'
+        url = re.findall('(http.*?)2018Cristalazul', s2)[0]
+        titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+        titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+        html = url + '2018CristalAzul'
+        enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+        return [(titulo, enlace)]
+    else:
+        return xbmc.executebuiltin("XBMC.Notification([COLOR aqua]Error [/COLOR],[COLOR white]Enlace Mal puesto[/COLOR], 4000)")
+  elif 'channel' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/c/' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'youtube.com/user' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)"title":\{"accessibility":\{"accessibilityData":\{"label":".*?".*?simpleText":"(.*?)".*?watch.v=(.*?)"', html)
+  elif 'list' in url:
+    html = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    return re.findall('(?s)playlistPanelVideoRenderer".*?simpleText":"(.*?)".*?vi\/(.*?)\/', html)
+  else:
+    titulo2 = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0'}, verify=False).text
+    titulo = re.findall('title.":{."simpleText.":."(.*?)"', titulo2)[0]
+    html = url + '2018CristalAzul'
+    enlace = re.findall('v=(.*?)2018CristalAzul', html)[0]
+    return [(titulo, enlace)]
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<info>Serie animada de TV (1940-2005) que muestra los intentos de un gato (Tom) por capturar a un ratón (Jerry). Los episodios fueron producidos por los estudios de la Metro-Goldwyn-Mayer desde 1940 hasta 1958, cuando el grupo de animación del estudio fue cerrado. MGM, en 1960, subcontrató la producción de Tom y Jerry a Rembrandt Films (dirigido por Gene Deitch) en Europa del este. En 1963, la producción de los cortos de Tom y Jerry regresaron a Hollywood con Sib-Tower 12 Productions de Chuck Jones; estas series duraron hasta 1967. Tom y Jerry regresó luego en forma de caricaturas para la televisión por Hanna-Barbera (1975 - 1977; 1990 - 1993) y Filmation Studios (1980 - 1982).</info>
+<thumbnail>https://i.imgur.com/jE2TlwJ.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
+
+
