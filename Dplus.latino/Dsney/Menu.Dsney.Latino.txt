@@ -13,7 +13,7 @@
 
 
 <item>
-<title>[B][COLOR darkgoldenrod]* [COLOR white]CINE DISNEY[/COLOR]</title>  
+<title>[B][COLOR darkgoldenrod]* [COLOR white]CINE DISNEY[/COLOR][/B]</title> 
 <link>$doregex[c]</link>
 <regex>
 <name>c</name>
