@@ -10,7 +10,7 @@
 </item>
 
 
-
+<!--
 <item>
 <title>[B][COLOR red]ESPECIAL [COLOR white]NAVIDAD[/COLOR][/B]</title> 
 <link>cristalazul</link>
@@ -67,10 +67,16 @@ def revist_dag(page_data):
 <thumbnail>https://i.imgur.com/L63sg0B.png</thumbnail> 
 <fanart>https://i.imgur.com/PAjbyGX.jpg</fanart>
 </item>
+-->
 
 
-
-
+<item>
+<title>[B][COLOR darkgoldenrod]* [COLOR white]DISNEY +[/COLOR][/B]</title>
+<link>http://ignorame</link>
+<thumbnail>https://i.imgur.com/8gpYDvY.png</thumbnail>
+<fanart>https://i.imgur.com/octb2sN.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/Dplus.latino/Menu.principal.enc.txt$$LSProEncKey= $$</externallink>
+</item>
 
 
 <item>
