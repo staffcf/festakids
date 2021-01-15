@@ -75,7 +75,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 <item>
 <title>[COLOR orange]+[/COLOR] [COLOR white]SERIES ORIGINALES DISNEY + [COLOR chartreuse][/COLOR]</title>
 <link>$doregex[lou]</link>
-<externallink>$$LSProEncKey= $$</externallink>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/Dplus.latino/Originales/series.enc.txt$$LSProEncKey= $$</externallink>
 <thumbnail>https://i.imgur.com/pq8KyGi.png</thumbnail>
 <fanart>https://i.imgur.com/Koo2Ejf.jpg</fanart>
 </item>
