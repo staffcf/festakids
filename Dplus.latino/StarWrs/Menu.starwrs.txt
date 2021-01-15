@@ -10,7 +10,7 @@
 
 
 <item>
-<title>[COLOR orange]+[/COLOR] [COLOR white]CINE STAR WARS[/COLOR]</title>
+<title>[COLOR orange]+[/COLOR] [COLOR white]CINE[/COLOR]</title>
 <link>$doregex[c]</link>
 <regex>
 <name>c</name>
@@ -73,7 +73,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 
  
 <item>
-<title>[COLOR orange]+[/COLOR] [COLOR white]SERIES STAR WARS [/COLOR]</title>
+<title>[COLOR orange]+[/COLOR] [COLOR white]SERIES STAR WARS [COLOR gold](Próximamente)[/COLOR]</title>
 <externallink>$$LSProEncKey= $$</externallink>
 <link>na</link>
 <thumbnail>https://i.imgur.com/FWi9mE1.png</thumbnail>
