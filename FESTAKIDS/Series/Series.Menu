@@ -34,7 +34,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
     xbmc.executebuiltin('PlayMedia("https://archive.org/download/dragonball.pelis/DragonBall.Pelis.mp3",1)')
     time.sleep( 1 )
-    return 'http://bit.ly/novoespecialDB'
+    return 'https://raw.githubusercontent.com/FESTAKIDS/festakids/main/LILIANIME/menu.principal.especialdball'
 ]]></expres>
 <page></page>
 </regex>
