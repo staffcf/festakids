@@ -25,7 +25,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 ==========================================================================================================
 <item>
-<title>[COLOR yellow]FELICIDADES [COLOR white] [COLOR orange]27/01/21[/COLOR]</title>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Lucia [COLOR orange]27/01/21[/COLOR]</title>
 <link>$doregex[resolve]</link>
 <regex>
 <name>resolve</name>
@@ -39,7 +39,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>     
 </regex>
-<thumbnail>https://i.imgur.com/nrmF5xP.jpg</thumbnail>
+<thumbnail>https://i.imgur.com/xdZzuEe.jpg</thumbnail>
 <fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
 </item>    
     
