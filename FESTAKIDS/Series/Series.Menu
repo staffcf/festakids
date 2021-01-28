@@ -22,7 +22,7 @@ eses<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
  -->
  
 <item>
-<title>[B][COLOR darkgoldenrod]* [COLOR white]ESPECIAL DRAGON BALL [COLOR yellow][/COLOR][/B]</title>
+<title>[B][COLOR yellow]ESPECIAL [COLOR white]DRAGON BALL [COLOR yellow][/COLOR][/B]</title>
 <link>cristalazul</link>
 <externallink>$doregex[c]</externallink>
 <regex>
@@ -89,7 +89,7 @@ sólo da acesso a ésas webs, éstas son las responsables de los contenidos"[/CO
 
 
 <item>
-<title>[B][COLOR darkgoldenrod]* [COLOR white]SERIES EL RINCON MAGICO [COLOR orangered][/COLOR][/B]</title>
+<title>[B][COLOR darkgoldenrod]SERIES [COLOR white] EL RINCON MAGICO [COLOR orangered][/COLOR][/B]</title>
 <link>http://ignorame</link>
 <thumbnail>https://i.imgur.com/se7Bppp.png</thumbnail>
 <fanart>https://i.imgur.com/Koo2Ejf.jpg</fanart>
@@ -99,7 +99,7 @@ sólo da acesso a ésas webs, éstas son las responsables de los contenidos"[/CO
 
 
 <item>
-<title>[B][COLOR darkgoldenrod]SERIES [COLOR white]Kids[/COLOR][/B]</title>
+<title>[B][COLOR darkgoldenrod]SERIES [COLOR white]KIDS[/COLOR][/B]</title>
 <link>$doregex[lou]</link>
 <regex>
 <name>lou</name>
@@ -196,7 +196,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 
 
 <item>
-<title>[B][COLOR darkgoldenrod]SERIES [COLOR white]Cartoon Network[/COLOR][/B]</title>
+<title>[B][COLOR darkgoldenrod]SERIES [COLOR white]CARTOON NETWORK[/COLOR][/B]</title>
 <link>$doregex[lou]</link>
 <regex>
 <name>lou</name>
@@ -292,7 +292,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 
 
 <item>
-<title>[B][COLOR darkgoldenrod]SERIES [COLOR white]Disney Channel[/COLOR][/B]</title>
+<title>[B][COLOR darkgoldenrod]SERIES [COLOR white]DISNEY CHANNEL[/COLOR][/B]</title>
 <link>$doregex[lou]</link>
 <regex>
 <name>lou</name>
@@ -386,7 +386,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 </item>
 -------------------------------------------------------------------------------------------------------------------
 <item>
-<title>[B][COLOR darkgoldenrod]SERIES [COLOR white]Nickelodeon[/COLOR][/B]</title>
+<title>[B][COLOR darkgoldenrod]SERIES [COLOR white]NICKELODEON[/COLOR][/B]</title>
 <link>$doregex[lou]</link>
 <regex>
 <name>lou</name>
