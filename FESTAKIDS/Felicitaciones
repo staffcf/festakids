@@ -25,6 +25,42 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 ==========================================================================================================
 <item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Haizea [COLOR orange]2/02/21[/COLOR]</title>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+
+<expres><![CDATA[#$pyFunction
+
+def GetLSProData(page_data,Cookie_Jar,m):
+
+   import resolveurl
+
+   url = 'https://ok.ru/video/1944466950724'
+
+   try:
+
+       u = resolveurl.resolve(url)
+
+   except:
+
+       u = ''
+
+   return u
+
+]]></expres>
+
+<page></page>
+
+</regex>
+<thumbnail>https://i.imgur.com/qoEs4YI.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+    
+    
+    
+    
+<item>
 <title>[COLOR yellow]FELICIDADES [COLOR white]Lucia [COLOR orange]27/01/21[/COLOR]</title>
 <link>$doregex[resolve]</link>
 <regex>
