@@ -273,6 +273,18 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 <fanart>https://i.imgur.com/0D8Ft2R.jpg</fanart>
 </item>
 ---------------------------------------------------------------------------------------------------------------------------
+
+<item>
+<title>[COLOR gold]*[/COLOR] [COLOR white]Dragon Ball [COLOR orange] Catalán [COLOR yellow](Nuevo)[/COLOR]</title>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/LILIANIME/DBALL.CATALAN/DB.CATALAN$$LSProEncKey= $$</externallink>
+<link>na</link>
+<thumbnail>https://i.imgur.com/ivX08il.jpg</thumbnail>
+<fanart>https://i.imgur.com/0D8Ft2R.jpg</fanart>
+</item>
+
+
+
+<!--
 <item>
 <title>[COLOR gold]*[/COLOR] [COLOR white]Bola de Drac [COLOR orange] Catalan[/COLOR]</title>
 <link>$doregex[cristal_series]</link>
@@ -335,6 +347,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 <thumbnail>https://i.imgur.com/ivX08il.jpg</thumbnail>
 <fanart>https://i.imgur.com/0D8Ft2R.jpg</fanart>
 </item>
+-->
 --------------------------------------------------------------------------------------------------------------------------------------------------
 <item>
 <title>[COLOR gold]*[/COLOR] [COLOR white]Bola de Drac [COLOR orange]Valencià [COLOR yellow][/COLOR]</title>
