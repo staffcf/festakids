@@ -5,7 +5,7 @@
 <item>
 <title>[B][COLOR gold]*[/COLOR] [COLOR gold]D+ [COLOR white] Actualizadas esta semana[/COLOR][/B]</title>
 <link>$doregex[lou]</link>
-<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES.LONUEVO.DP$$LSProEncKey= $$</externallink>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/series.lo.nuevo/Series.dp.fkids$$LSProEncKey= $$</externallink>
 <thumbnail>https://i.imgur.com/CO5BB5X.png</thumbnail>
 <fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
 </item>
