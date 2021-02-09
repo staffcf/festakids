@@ -32,8 +32,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 import urlresolver
 def GetLSProData(page_data,Cookie_Jar,m):
- url = 'https://www.youtube.com/watch?v=wPQj5VwG9XY'
- streamLink = urlresolver.resolve(url)
+ url = 'https://www.youtube.com/watch?v=tSQXZaj_dBs'
+ streamLink = resolveurl.resolve(url)
  return streamLink
 ]]></expres>
 <page></page>
@@ -89,7 +89,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 import urlresolver
 def GetLSProData(page_data,Cookie_Jar,m):
  url = 'https://www.youtube.com/watch?v=N5rYcGqLmh8'
- streamLink = urlresolver.resolve(url)
+ streamLink = resolveurl.resolve(url)
  return streamLink
 ]]></expres>
 <page></page>
@@ -144,7 +144,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 import urlresolver
 def GetLSProData(page_data,Cookie_Jar,m):
  url = 'https://www.youtube.com/watch?v=ZBJdLeixxKQ'
- streamLink = urlresolver.resolve(url)
+ streamLink = resolveurl.resolve(url)
  return streamLink
 ]]></expres>
 <page></page>
