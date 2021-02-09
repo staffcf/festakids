@@ -467,7 +467,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 
 
 <item> 
-<title>[COLOR orange]ANIME FLV [COLOR white]WEB[/COLOR]</title> 
+<title>[COLOR orange]ANIME FLV [COLOR white]Web[/COLOR]</title> 
 <externallink>https://pastebin.com/raw/jaMXCkvu$$LSProEncKey= $$</externallink> 
 <link>na</link> 
 <thumbnail>https://i.imgur.com/ajGm4a1.jpg</thumbnail>
@@ -478,7 +478,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 
 
 <item>
-<title>[COLOR orange]TIOANIME [COLOR white]WEB[/COLOR]</title> 
+<title>[COLOR orange]TIOANIME [COLOR white]Web[/COLOR]</title> 
 <link>$doregex[makelist1]</link>
  
 <regex>
