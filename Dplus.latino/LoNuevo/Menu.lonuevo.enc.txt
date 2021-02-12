@@ -35,7 +35,7 @@ LO NUEVO 					LO NUEVO 					LO NUEVO 				LO NUEVO 			  LO NUEVO
 
 
 <item>
-<title>[B][COLOR gold]*[/COLOR] [COLOR gold]Lo nuevo D+ [COLOR white]Series [COLOR gold]Disney Jr[/COLOR] </title>
+<title>[B][COLOR gold]*[/COLOR] [COLOR gold]Lo nuevo D+ [COLOR white]Series [COLOR gold]Disney Jr[/COLOR][B] </title>
 <link>$doregex[makelist2]</link>
 <regex>
 <name>makelist2</name>
