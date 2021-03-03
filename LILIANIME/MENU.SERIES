@@ -5,7 +5,7 @@
 
 
 <item>
-<title>[COLOR orange]BUSCADOR [COLOR white]Series [COLOR gold]NUEVO[/COLOR] </title>
+<title>[COLOR orange]BUSCADOR [COLOR white]Series [COLOR gold[/COLOR] </title>
 <link>$doregex[makelist2]</link>
 <regex>
 <name>makelist2</name>
