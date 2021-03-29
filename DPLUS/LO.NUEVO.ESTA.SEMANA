@@ -35,7 +35,51 @@
 LO NUEVO 					LO NUEVO 					LO NUEVO 				LO NUEVO 			  LO NUEVO 
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
+<item>
+<title>[B][COLOR gold]*[/COLOR] [COLOR gold]Lo nuevo D+ [COLOR white] Canta con las monstruo Girls[COLOR white][/COLOR][/B]</title>
+<link>$doregex[lou]</link>
+<regex>
+<name>lou</name>
+<listrepeat><![CDATA[
+<title>[lou.param2] [lou.param1]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[lou.param4]</thumbnail>
+<fanart>[lou.param5]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)<title>(.*?)-.*?(.*?)<.*?urlsolve>(.*?)<.*?thumbnail>(.*?)<.*?fanart>(.*?)<.*?]]></expres>
+<page>https://pastebin.com/raw/wiAfazAG</page>
+</regex>
+<regex>
 
+<name>id3</name>
+
+<expres><![CDATA[#$pyFunction
+
+def GetLSProData(page_data,Cookie_Jar,m):
+
+   import resolveurl
+
+   url = '[lou.param3]'
+
+   try:
+
+       u = resolveurl.resolve(url)
+
+   except:
+
+       u = ''
+
+   return u
+
+]]></expres>
+
+<page></page>
+
+</regex>
+<thumbnail>https://i.imgur.com/M1zOuPQ.png<thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+---------------------------------------------------------------------------------------------------------
 
 <item>
 <title>[B][COLOR gold]*[/COLOR] [COLOR gold]Lo nuevo D+ [COLOR white] Ganadoras del Oscar[COLOR white][/COLOR][/B]</title>
