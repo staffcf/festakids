@@ -393,13 +393,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-<item>
-<title>[B][COLOR darkgoldenrod]* [COLOR white][/COLOR][/B]</title>
-<link>http://ignorame</link>
-<thumbnail>https://i.imgur.com/iqMjqeV.png</thumbnail>
-<fanart>https://i.imgur.com/Koo2Ejf.jpg</fanart>
-<externallink>https://pastebin.com/raw/DmwDww8W</externallink>
-</item>
+
 
  
 </items>
