@@ -1,5 +1,3 @@
-
-
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
@@ -13,15 +11,13 @@
 
 
 <item>
-<title>[COLOR orange]*[/COLOR][COLOR white]Bola de Drac [COLOR red][COLOR gold]Z[/COLOR]</title>
+<title>[COLOR orange]*[/COLOR][COLOR white]Bola de Drac [COLOR gold]Z[/COLOR]</title>
 <externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/LILIANIME/DBALL.CATALAN/DBALL.Z.CATALAN$$LSProEncKey= $$</externallink>
 <link>na</link>
 <info>Sèrie TV (1989-1996). 291 episodis. La història de Bola de Drac Z es divideix en quatre branques centrals, repartides en un total de 291 episodis. La primera abasta des que Son Gohan, fill de Goku, és raptat pel saiyan Radish. L'etapa de Freezer porta a Goku, Krillin, Vegeta i Bulma a l'planeta Namek. Després ve la Saga dels Androides, que dóna començament quan tres androides (C-16, C-17, C-18) comencen a terroritzar la terra, fins a l'arribada de Cèl·lula. L'última etapa de Z la cobreix la Saga d'Buu. Comença quan Babidí, un bruixot bastant ambiciós, comença un pla per ressuscitar el poderós monstre Buu, un ens capaç de posar la terra al seu favor en un parell de moviments.</info>
 <thumbnail>https://i.imgur.com/9q5wzZB.jpg</thumbnail>
 <fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
 </item>
-
-
 
 
 <item>
@@ -33,3 +29,13 @@
 <fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
 </item>
 
+
+
+<item>
+<title>[COLOR orange]*[/COLOR][COLOR white]Bola de Drac [COLOR red][COLOR gold]Z KAI[/COLOR]</title>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/LILIANIME/DBALL.CATALAN/DB.ZKAI.CATALAN$$LSProEncKey= $$</externallink>
+<link>na</link>
+<info>Sèrie de TV (2009-2011; 98 episodis) (2014-2015; 61 episodis). Bola de Drac Kai és un remake / revisió de la sèrie Bola de Drac Z, produïda en commemoració del seu 20 aniversari. Va començar a emetre a l'abril de 2009. Compta amb animació millorada, suport per imatge en alta definició, nous efectes especials i totes les veus van ser regrabadas pels actors de doblatge originals. Malgrat que segueix la mateixa història que Bola de Drac Z, aquest cop es reduirà dràsticament amb la intenció d'apropar-la més al narrat en el màniga, deixant la sèrie en un total de 159 episodis, enfront dels 291 que componien Bola de Drac Z.</info>
+<thumbnail>https://i.imgur.com/c6777zp.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
