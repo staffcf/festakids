@@ -25,6 +25,43 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 ==========================================================================================================
 <item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Martín Camacho Chorro  [COLOR orange]26/04/21[/COLOR]</title>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+
+<expres><![CDATA[#$pyFunction
+
+def GetLSProData(page_data,Cookie_Jar,m):
+
+   import resolveurl
+
+   url = 'https://ok.ru/video/2117349345860'
+
+   try:
+
+       u = resolveurl.resolve(url)
+
+   except:
+
+       u = ''
+
+   return u
+
+]]></expres>
+
+<page></page>
+
+</regex>
+<thumbnail>https://i.imgur.com/d9gzke3.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+        
+    
+    
+    
+    
+<item>
 <title>[COLOR yellow]FELICIDADES [COLOR white]Elvis Alessandro. ( Maluma baby)  [COLOR orange]26/04/21[/COLOR]</title>
 <link>$doregex[id3]</link>
 <regex>
