@@ -8,7 +8,7 @@
 <link>festakids</link>
 <externallink>https://pastebin.com/raw/</externallink>
 <info>[COLOR darkgoldenrod]GRUPO TELEGRAM:           [COLOR gold]@addonfestaycristal           [COLOR white]Para dudas y preguntas sobre los addons FestayCristal.[/COLOR]</info>
-<thumbnail>https://i.imgur.com/uM1pois.png<thumbnail>
+<thumbnail>https://i.imgur.com/uM1pois.png</thumbnail>
 <fanart>https://i.imgur.com/octb2sN.jpg</fanart>
 </item>
 
