@@ -28,5 +28,538 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://i.imgur.com/d9gzke3.jpg</thumbnail>
 <fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
 </item>
-           
+ 
+ 
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Elvis Alessandro. ( Maluma baby)  [COLOR orange]26/04/21[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/2108093631044'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/elMT12w.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+    
+    
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Marc  [COLOR orange]25/04/21[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/2118177851972'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/efygOcl.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+            
+       
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Álvaro [COLOR orange]31/03/21[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/2058879502916'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/crH1FBR.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>        
+    
+    
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Hugo [COLOR orange]16/02/21[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1975564372548'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>  
+<thumbnail>https://i.imgur.com/NCaICxY.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item> 
+
+    
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Álvaro O G [COLOR orange]13/02/21[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1970895194692'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/ucJFgw0.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>     
+    
+    
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Haizea [COLOR orange]2/02/21[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1944466950724'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/qoEs4YI.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+    
+   
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Lucia [COLOR orange]27/01/21[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=N5rYcGqLmh8'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/xdZzuEe.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>    
+    
+    
+ <item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Valeria [COLOR orange]16/01/21[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1900228577860'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/7fMHguU.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+   
+    
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Lucas  [COLOR orange]1/01/21[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=ZBJdLeixxKQ'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/mwd3SSf.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>  
+    
+    
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Paula [COLOR orange]25/12/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1819163036228'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/a2a3y9z.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Katherine  [COLOR orange]21/12/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/2108093827652'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/nrmF5xP.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Iris [COLOR orange]20/12/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1819162053188'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/C2WPdvj.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Marta M.O [COLOR orange]10/12/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1944104667812'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>  
+<thumbnail>https://i.imgur.com/XvujKQT.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Alejandro  [COLOR orange]9/12/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=62_RUi5bp4Y'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/if5X1mW.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Nerea [COLOR orange]06/12/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/2063077477028'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/jYVi7yN.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Samuel  [COLOR orange]29/11/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=wa8QlH5LP4I'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/y5qxtSk.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Alisson P  [COLOR orange]22/11/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1944104143524'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/FQjutho.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Jorge [COLOR orange]18/11/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/2006520105636'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/7WAOCNr.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Anna  [COLOR orange]11/11/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1955511798436'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/Smcdirc.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Yago y Mara [COLOR orange]29/10/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1960999914148'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/9Tros20.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Noah  [COLOR orange]28/10/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=EL-nw5DrpKY'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<thumbnail>https://i.imgur.com/P0hqVbL.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Angelo [COLOR orange]21/10/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=3bLzZ7kKV9E'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/4GiJoPF.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Amaia E. [COLOR orange]19/10/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1944104340132'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/MGoGYOy.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Mikel [COLOR orange]17/10/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1944104864420'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/J7re3WQ.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Mathias [COLOR orange]16/10/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1944104798884'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/YkmdfDH.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Arnaud [COLOR orange]16/10/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1944104405668'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/ZqdmKGU.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+ <item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Celia [COLOR orange]16/10/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1944104471204'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/0wlQWMK.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FELICIDADES [COLOR white]Jorge [COLOR orange]15/10/20[/COLOR]</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1944104536740'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/YHUDIMk.jpg</thumbnail>
+<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
+</item>
+
+
 </items>
