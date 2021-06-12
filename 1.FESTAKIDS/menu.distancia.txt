@@ -7,7 +7,7 @@
 6series=""
 7kidslatino=""
 8karaokekids=""
-9zumba=""
+9zumba="http://bit.ly/festakids_zumba"
 10manuart=""
 11lilikids=""
 12dibujos=""
