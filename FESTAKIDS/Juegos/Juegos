@@ -191,7 +191,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 <item>
-<title>[B][COLOR orange]FESTA TUBERIAS[COLOR yellow](solo en kodi 17 y 18)[/COLOR][/B]</title>
+<title>[B][COLOR orange]FESTA TUBERIAS [COLOR white](solo en kodi 17 y 18)[/COLOR][/B]</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://script.game.netwalk/</jsonrpc>
 <thumbnail>https://i.imgur.com/kNZgWGa.png</thumbnail>
@@ -200,7 +200,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 <item>
-<title>[B][COLOR pink]YAHTZEE[COLOR yellow](solo en kodi 17 y 18)[/COLOR][/B]</title>
+<title>[B][COLOR pink]YAHTZEE [COLOR white](solo en kodi 17 y 18)[/COLOR][/B]</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://script.game.yahtzee/</jsonrpc>
 <thumbnail>https://i.imgur.com/8o4Cdmf.jpg</thumbnail>
@@ -209,7 +209,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 <item>
-<title>[B][COLOR aqua]FESTA AJEDREZ [COLOR yellow](solo en kodi 17)[/COLOR][/B]</title>
+<title>[B][COLOR aqua]FESTA AJEDREZ [COLOR white](solo en kodi 17)[/COLOR][/B]</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://plugin.script.afestaajedrez/</jsonrpc>
 <thumbnail>https://i.imgur.com/fg952Jr.jpg</thumbnail>
@@ -218,7 +218,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 <item>
-<title>[B][COLOR lime]FESTA CONECTA4 [COLOR yellow](solo en kodi 17 y 18)[/COLOR][/B]</title>
+<title>[B][COLOR lime]FESTA CONECTA4 [COLOR white](solo en kodi 17 y 18)[/COLOR][/B]</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://script.game.connect4/</jsonrpc>
 <thumbnail>https://i.imgur.com/wlw1ipc.jpg</thumbnail>
@@ -227,7 +227,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 <item>
-<title>[B][COLOR gold]2048 [COLOR yellow](solo en kodi 17 y 18)[/COLOR][/B]</title>
+<title>[B][COLOR gold]2048 [COLOR white](solo en kodi 17 y 18)[/COLOR][/B]</title>
 <link>http://Ignoreme</link>
 <jsonrpc>plugin://script.game.2048/</jsonrpc>
 <thumbnail>https://i.imgur.com/WaoyBFO.jpg</thumbnail>
