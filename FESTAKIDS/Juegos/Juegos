@@ -372,3 +372,217 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items> 
+ 
+
+<item>
+ <title>[COLOR yellow]JUST DANCE KIDS[/COLOR]</title>
+ <link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/KFAuyll.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'http://www.youtube.com/watch?v=nYsFpZl-w3U&list=PLpy_XRdn544r-5MHFZPRvrTxHFkXFljr8'
+import re,six
+$doregex[conector_youtube]
+
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>conector_youtube</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,base64,shutil,random
+from kodi_six import xbmc,xbmcgui,xbmcaddon,xbmcvfs
+from six.moves import urllib_request
+import six
+def GetLSProData(page_data,Cookie_Jar,m):
+    pasta = requests.get('https://raw.githubusercontent.com/Cristalazul/Cristalazul.io/main/CONECTORES/youtube', verify=False).text
+    return six.ensure_str(pasta)
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/Ybl4R6U.jpg</thumbnail>
+<fanart>https://i.imgur.com/SUzleRf.jpg</fanart>
+</item>
+
+
+<item>
+ <title>[COLOR deeppink]JUST DANCE KIDS II[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/KFAuyll.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=5J1LixIs7lw&list=PLzkyFTVU_5WL0lLQ7FFCaqTjpzn_U7yLf'
+
+<thumbnail>https://i.imgur.com/dBhTVsT.jpg</thumbnail>
+<fanart>https://i.imgur.com/SUzleRf.jpg</fanart>
+</item>
+
+
+<item>
+ <title>[COLOR deepskyblue]DISNEY PARTI I[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/KFAuyll.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'http://www.youtube.com/watch?v=EernTFIMdbs&list=PLzkyFTVU_5WKLPio05qSRYr1OtYyvhBN_'
+import re,six
+$doregex[conector_youtube]
+
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>conector_youtube</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,base64,shutil,random
+from kodi_six import xbmc,xbmcgui,xbmcaddon,xbmcvfs
+from six.moves import urllib_request
+import six
+def GetLSProData(page_data,Cookie_Jar,m):
+    pasta = requests.get('https://raw.githubusercontent.com/Cristalazul/Cristalazul.io/main/CONECTORES/youtube', verify=False).text
+    return six.ensure_str(pasta)
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/TbhjTWG.jpg</thumbnail>
+<fanart>https://i.imgur.com/SUzleRf.jpg</fanart>
+</item>
+
+
+<item>
+ <title>[COLOR lime]DISNEY PARTI II[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/KFAuyll.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=Hu8xIJ5lE6U&list=PLzkyFTVU_5WI9HmIzg5ZnBI1qTmcp9SwX'
+import re,six
+$doregex[conector_youtube]
+
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>conector_youtube</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,base64,shutil,random
+from kodi_six import xbmc,xbmcgui,xbmcaddon,xbmcvfs
+from six.moves import urllib_request
+import six
+def GetLSProData(page_data,Cookie_Jar,m):
+    pasta = requests.get('https://raw.githubusercontent.com/Cristalazul/Cristalazul.io/main/CONECTORES/youtube', verify=False).text
+    return six.ensure_str(pasta)
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/bsCLfcg.jpg</thumbnail>
+<fanart>https://i.imgur.com/SUzleRf.jpg</fanart>
+</item>
+ 
+ 
+<item>
+<title>[B][COLOR orange]FESTA TUBERIAS[COLOR yellow](solo en kodi 17 y 18)[/COLOR][/B]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin://script.game.netwalk/</jsonrpc>
+<thumbnail>https://i.imgur.com/kNZgWGa.png</thumbnail>
+<fanart>https://i.imgur.com/8o4Cdmf.jpg</fanart>
+</item>
+ 
+ 
+<item>
+<title>[B][COLOR pink]YAHTZEE[COLOR yellow](solo en kodi 17 y 18)[/COLOR][/B]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin://script.game.yahtzee/</jsonrpc>
+<thumbnail>https://i.imgur.com/8o4Cdmf.jpg</thumbnail>
+<fanart>https://i.imgur.com/8o4Cdmf.jpg</fanart>
+</item>
+ 
+ 
+<item>
+<title>[B][COLOR aqua]FESTA AJEDREZ [COLOR yellow](solo en kodi 17)[/COLOR][/B]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin://plugin.script.afestaajedrez/</jsonrpc>
+<thumbnail>https://i.imgur.com/fg952Jr.jpg</thumbnail>
+<fanart>https://i.imgur.com/fg952Jr.jpg</fanart>
+</item>
+ 
+ 
+<item>
+<title>[B][COLOR lime]FESTA CONECTA4 [COLOR yellow](solo en kodi 17 y 18)[/COLOR][/B]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin://script.game.connect4/</jsonrpc>
+<thumbnail>https://i.imgur.com/wlw1ipc.jpg</thumbnail>
+<fanart>https://i.imgur.com/hLGOdKj.jpg</fanart>
+</item>
+ 
+ 
+<item>
+<title>[B][COLOR gold]2048 [COLOR yellow](solo en kodi 17 y 18)[/COLOR][/B]</title>
+<link>http://Ignoreme</link>
+<jsonrpc>plugin://script.game.2048/</jsonrpc>
+<thumbnail>https://i.imgur.com/WaoyBFO.jpg</thumbnail>
+<fanart>https://i.imgur.com/hLGOdKj.jpg</fanart>
+</item>
+ 
+ 
+ 
+ 
+ 
+
+</items>
