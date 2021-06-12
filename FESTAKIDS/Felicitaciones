@@ -1,57 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
-
-
-
-
+<items>
 
 <item>
-<title>[COLOR white]¿Quieres tu felicitación de cumpleaños?[/COLOR]</title>
-<link>$doregex[text]</link>
-<regex>
-<name>text</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import xbmcgui
-    dialog = xbmcgui.Dialog()
-    dialog.textviewer('Felicitación', '[B][COLOR white]Si quieres tener tu felicitacion de cumpleaños en el Festa kids,[/COLOR][/B]\n\n\n[B][COLOR white]dile a tu papá o a tu mamá que nos envíen tu nombre y fecha de cumpleaños [/COLOR][/B]\n\n\n[B][COLOR deepskyblue]Al grupo de telegram:[/COLOR][/B] [B][COLOR gold]@addonfestaycristal [/COLOR][/B]')
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://i.imgur.com/k7Njv0m.jpg<thumbnail>
-<fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
-</item>´
+<title>[B][COLOR darkgoldenrod]TELEGRAM: [COLOR gold][COLOR gold]@addonfestaycristal [/COLOR][/B]</title>
+<link>festakids</link>
+<externallink>https://pastebin.com/raw/</externallink>
+<info>[COLOR darkgoldenrod]GRUPO TELEGRAM:           [COLOR gold]@addonfestaycristal           [COLOR white]Para dudas y preguntas sobre los addons FestayCristal.[/COLOR]</info>
+<thumbnail>https://i.imgur.com/uM1pois.png</thumbnail>
+<fanart>https://i.imgur.com/octb2sN.jpg</fanart>
+</item>
 
 
-==========================================================================================================
 <item>
 <title>[COLOR yellow]FELICIDADES [COLOR white]Martín Camacho Chorro  [COLOR orange]26/04/21[/COLOR]</title>
-<link>$doregex[id3]</link>
+<link>$doregex[resolve]</link>
 <regex>
-<name>id3</name>
-
+<name>resolve</name>
 <expres><![CDATA[#$pyFunction
-
+import resolveurl
 def GetLSProData(page_data,Cookie_Jar,m):
-
-   import resolveurl
-
-   url = 'https://ok.ru/video/2117349345860'
-
-   try:
-
-       u = resolveurl.resolve(url)
-
-   except:
-
-       u = ''
-
-   return u
-
+ url = 'https://ok.ru/video/2117349345860'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
 ]]></expres>
-
 <page></page>
-
 </regex>
 <thumbnail>https://i.imgur.com/d9gzke3.jpg</thumbnail>
 <fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
@@ -496,7 +468,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>     
-</regex>
 <thumbnail>https://i.imgur.com/if5X1mW.jpg</thumbnail>
 <fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
 </item>
@@ -530,7 +501,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 
 <page></page>
-
 </regex>
 <thumbnail>https://i.imgur.com/jYVi7yN.jpg</thumbnail>
 <fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
@@ -550,7 +520,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
  return streamLink
 ]]></expres>
 <page></page>
-</regex>     
 </regex>
 <thumbnail>https://i.imgur.com/y5qxtSk.jpg</thumbnail>
 <fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
@@ -706,7 +675,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
  return streamLink
 ]]></expres>
 <page></page>
-</regex>     
 </regex>
 <thumbnail>https://i.imgur.com/P0hqVbL.jpg</thumbnail>
 <fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
@@ -1203,3 +1171,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://i.imgur.com/7WEbIb2.jpg</thumbnail>
 <fanart>https://i.imgur.com/4Qgvf8A.jpg</fanart>
 </item>
+
+
+
+
+</items>
