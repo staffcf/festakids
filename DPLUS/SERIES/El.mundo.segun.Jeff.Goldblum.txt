@@ -95,7 +95,7 @@ eval(compile(base64.b64decode(eval('\x6e\x65\x6f')),'<string>','exec'))
 </regex>
 <info>En cada uno de estos 12 episodios, Jeff Goldblum tira del hilo de un objeto sorprendentemente familiar para descubrir un mundo de conexiones sorprendentes y de ciencia e historia fascinantes. Visto con su curiosidad e inteligencia, nada es lo que parece. Estas "maravillas modernas" son tan comunes que a veces damos por sentada su existencia... pero Jeff Goldblum no.</info>
 <thumbnail>https://i.imgur.com/5M7SrGz.jpg</thumbnail>
-<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
 </item>
 
 
