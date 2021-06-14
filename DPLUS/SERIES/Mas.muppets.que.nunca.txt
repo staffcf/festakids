@@ -95,7 +95,7 @@ eval(compile(base64.b64decode(eval('\x6e\x65\x6f')),'<string>','exec'))
 </regex>
 <info>Nueva serie de Los Teleñecos (The Muppets) que combina segmentos de entretenimiento, variedad, cocina y talk show, todo de forma improvisada.</info>
 <thumbnail>https://i.imgur.com/Krx2KGB.jpg</thumbnail>
-<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
 </item>
 
 
