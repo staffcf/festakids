@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+
+
+
+<item>
+<title>[COLOR darkgoldenrod]* [COLOR white]Galeria Disney[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/Galeria.Disney.xml</externallink>
+<info>8 episodios. En ‘Disney Gallery: The Mandalorian’, el productor ejecutivo Jon Favreau invita al elenco y al equipo a compartir una mirada sobre la realización de la serie, que rápidamente se convirtió en un fenómeno popular tras su estreno en noviembre 2019. Una serie documental de ocho episodios en el que cada uno explora una faceta diferente de la primera serie de televisión de acción real de Star Wars a través de entrevistas, imágenes inéditas y conversaciones en mesas redondas organizadas por Favreau.</info>
+<thumbnail>https://i.imgur.com/rgHXceK.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR darkgoldenrod]* [COLOR white]Star Wars: La remesa mala[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/Star.Wars.La.remesa.mala.xml</externallink>
+<info>Un "mala remesa" de clones experimentales de élite intentan abrirse camino a través de una galaxia en constante evolución justo cuando se empiezan a experimentar las primeras consecuencias de la Guerra de los Clones.</info>
+<thumbnail>https://i.imgur.com/YvAqxWX.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR darkgoldenrod]* [COLOR white]The Mandalorian[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/The.mandalorian.xml</externallink>
+<info>Ambientada tras la caída del Imperio y antes de la aparición de la Primera Orden, la serie sigue los pasos de Mando, un cazarrecompensas perteneciente a la legendaria tribu de los mandalorianos, un pistolero solitario que trabaja en los confines de la galaxia, donde no alcanza la autoridad de la Nueva República.</info>
+<thumbnail>https://i.imgur.com/XhkYISa.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+
+
+
+</items>
