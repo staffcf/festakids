@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+
+<item>
+<title>[COLOR white]El hombre orquesta [/COLOR][COLOR yellow]Pixar[/COLOR]</title>  
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=kmF2kLwbC0k'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<genre>Animación, Comedia</genre>
+<year>2005</year>  
+<thumbnail>https://i.imgur.com/d8aUfMQ.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Una pequeña campesina con una gran moneda de oro acude a la fuente de la plaza para pedir un deseo y se encuentra con dos músicos callejeros. Ambos competirán por conseguir la moneda. Acompañó a Cars (2006) en su estreno en cines.</info>
+</item>
+
+
+
+
+<item>
+<title>[COLOR white]Saltando [/COLOR][COLOR yellow]Pixar[/COLOR]</title> 
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=GkTiVPAXv8'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<genre>Animación, Comedia</genre>
+<year>2003</year>  
+<thumbnail>https://i.imgur.com/qhFc4tU.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Cuenta la historia de de una oveja muy elegante cuyos bailes son realmente populares entre los otros animales, hasta que un día es esquilada. Acompañó a Los Increíbles (2004) en su estreno en cines.</info>
+</item>
+
+
+<item>
+<title>[COLOR white]Smash and Grab [/COLOR][COLOR yellow]Pixar[/COLOR]</title> 
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=A4-G7YpSFb4'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<genre>Animación, Ciencia ficción</genre>
+<year>2019</year>  
+<thumbnail>https://i.imgur.com/Lhrz4Wa.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Tras años de trabajo duro en el interior de la sala de máquina de una enorme locomotora, dos robots anticuados deciden poner su vida en riesgo para tratar de zafarse de las cadenas que los oprimen.</info>
+</item>
+
+
+<item>
+<title>[COLOR white] Piper [COLOR yellow](2016) [COLOR chartreuse][/COLOR]</title>    
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://ok.ru/video/1896545127076'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<genre>Animacion,Cortometraje</genre>
+<year>2016</year>  
+<thumbnail>https://i.imgur.com/InbYTgl.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Sigue la historia de un pequeño pájaro, el cual, hambriento, decide enfrentarse a su mayor miedo: el agua. Acompañó a "Buscando a Dory" en las salas de cine. </info>
+</item>
+
+
+<item>
+<title>[COLOR white]Toy Story El Tiempo Perdido [/COLOR][COLOR yellow]Pixar[/COLOR]</title> 
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=KrcnHoU50KA'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<genre>Animación. Comedia. Aventuras</genre>
+<year>2015</year>  
+<thumbnail>https://i.imgur.com/q8wgCnx.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Después del día de Navidad, la pandilla de "Toy Story" se encuentra en territorio desconocido cuando Bonnie va a casa de un amigo a jugar a la consola. Allí, Woody y compañía se encuentran con todo un set de figuras de acción que no sabe que en realidad son juguetes. Ahora todo depende de Trixie, el triceratops, para que las cosas no se vuelvan completamente locas.</info>
+</item>
+
+
+</items>
