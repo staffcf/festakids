@@ -10,7 +10,7 @@
 
 
 <item>
-<title>[B][COLOR darkgoldenrod]* [COLOR white]PELICULAS[/COLOR][/B]</title>
+<title>[B][COLOR darkgoldenrod]* [COLOR white]CINE[/COLOR][/B]</title>
 <link>$doregex[c]</link>
 <regex>
 <name>c</name>
@@ -70,8 +70,17 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 <fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
 </item>
 
+
 <item>
-<title>[B][COLOR darkgoldenrod]* [COLOR white]Cortometrajes[/COLOR][/B]</title>
+<title>[B][COLOR darkgoldenrod]* [COLOR white]SERIES[/COLOR][/B]</title>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/PXAR/series.pxar.xml</externallink>
+<link>na</link>
+<thumbnail>https://i.imgur.com/j1RlDt1.png</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>    
+    
+<item>
+<title>[B][COLOR darkgoldenrod]* [COLOR white]CORTOMETRAJES[/COLOR][/B]</title>
 <externallink>https://pastebin.com/raw/u46Znqsh</externallink>
 <link>na</link>
 <thumbnail>https://i.imgur.com/j1RlDt1.png</thumbnail>
@@ -80,7 +89,7 @@ import base64;exec(base64.b64decode("aW1wb3J0IG1hcnNoYWw7ZXhlYyhtYXJzaGFsLmxvYWR
 
 <item>
 <item>
-<title>[B][COLOR gold]*[/COLOR][COLOR white]Lo mejor de Pixar[/COLOR][/B]</title>
+<title>[B][COLOR gold]*[/COLOR][COLOR white]LO MEJOR DE PIXAR[/COLOR][/B]</title>
 <link>$doregex[link_inteligente]</link>
 <regex>
 <name>link_inteligente</name>
