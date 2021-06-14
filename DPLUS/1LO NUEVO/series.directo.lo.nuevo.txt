@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+
+<item>
+<title>[COLOR yellow]***** [COLOR white]JUNIO[COLOR yellow]*****[/COLOR]</title>
+<thumbnail>https://i.imgur.com/e6pzq4Q.png</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<link>http://ignoreme</link>
+<externallink>https://pastebin.com/raw/</externallink>
+</item>
+
+<item>
+<title>[COLOR darkgoldenrod]* [COLOR white]Marvel's Loki[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/Marvel.loki.xml</externallink>
+<info>Loki es llevado ante la misteriosa organización llamada Autoridad de Variación Temporal después de robar el Cubo Cósmico durante los eventos de Avengers: Endgame (2019) y se le da a elegir enfrentarse a la eliminación de la realidad o ayudar contra una amenaza mayor,​ por lo cual Loki termina viajando a través del tiempo, alterando la historia humana.</info>
+<thumbnail>https://i.imgur.com/5U2CIyJ.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR gold]* [COLOR white]Marvel's M.o.d.o.k[/COLOR]</title>     
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/Cristalazul/Cristalazul.io/main/SERIES/Series.Cristal/Marvel.M.o.d.o.k.txt</externallink>
+<info>El supervillano M.O.D.O.K ha perseguido durante mucho tiempo su sueño de conquistar el mundo. Pero después de años de reveses y fracasos luchando contra los héroes más poderosos de la Tierra, Derrocado como líder de A.I.M mientras lidia con el matrimonio y una vida familiar que se desmorona, M.O.D.O.K está listo para enfrentarse a su mayor desafío hasta ahora: una crisis de la mediana edad. </info>
+<thumbnail>https://i.imgur.com/Q9maGAt.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR gold]* [COLOR white]Marvel The Fury Files[/COLOR]</title>     
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/Cristalazul/Cristalazul.io/main/SERIES/Series.Cristal/Marvel.The.Fury.Files</externallink>
+<info>La serie ofrecerá acceso a todos los secretos de los archivos de S.H.I.E.L.D. relacionados con sus héroes y villanos. Todo ello con la ayuda de Fury, mezclando animación y un peculiar estilo cómic. </info>
+<thumbnail>https://i.imgur.com/AllVyze.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR darkgoldenrod]* [COLOR white]Star Wars: La remesa mala[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/Star.Wars.La.remesa.mala.xml</externallink>
+<info>Un "mala remesa" de clones experimentales de élite intentan abrirse camino a través de una galaxia en constante evolución justo cuando se empiezan a experimentar las primeras consecuencias de la Guerra de los Clones.</info>
+<thumbnail>https://i.imgur.com/YvAqxWX.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+ 
+<item>
+<title>[COLOR darkgoldenrod]* [COLOR white]El Mister[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/El.mister.xml</externallink>
+<info>Un temperamental entrenador de baloncesto universitario despedido de su trabajo, se ve obligado aceptar un trabajo de maestro y entrenamiento en un instituto privado de élite para chicas.</info>
+<thumbnail>https://i.imgur.com/FSQvanD.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+</items>
