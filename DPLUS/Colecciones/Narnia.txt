@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+
+
+<item>
+<title>[COLOR white]Las crónicas de Narnia: El león, la bruja y el armario [COLOR cyan](2005)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://upstream.to/crf05m41x473'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Fantastico,Aventuras,Familiar</genre>
+<year>2005</year>  
+<thumbnail>https://i.imgur.com/FhIOoJT.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>La historia narra las aventuras de cuatro hermanos: Lucy, Edmund, Susan y Peter que, durante la Segunda Guerra Mundial, descubren el mundo de Narnia, al que acceden a través de un armario mágico mientras juegan al escondite en la casa de campo de un viejo profesor. En Narnia descubrirán un mundo increíble habitado por animales que hablan, duendes, faunos, centauros y gigantes al que la Bruja Blanca- Jadis- ha condenado al invierno eterno. Con la ayuda del león Aslan, el noble soberano, los niños lucharán para vencer el poder que la Bruja Blanca ejerce sobre Narnia en una espectacular batalla y conseguir así liberarle de la maldición del frío.</info>
+</item>
+
+<item>
+<title>[COLOR white]Las crónicas de Narnia: El príncipe Caspian  [COLOR cyan](2008)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://upstream.to/2l7wcwahc4nb'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Fantastico,Aventuras,Familiar</genre>
+<year>2008</year>  
+<thumbnail>https://i.imgur.com/oQFDc3O.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>La acción de "Las crónicas de Narnia. El Príncipe Caspian" transcurre un año después de los increíbles acontecimientos de "El León, la Bruja y el Armario", cuando los reyes y las reinas de Narnia -los 4 hermanos Pevensie- vuelven a reunirse en ese remoto y fantástico mundo, donde descubrirán que han pasado más de 1.300 años, calculados en tiempo narniano. Durante su ausencia, la Edad de Oro de Narnia ha terminado, y los Telmarinos han conquistado el reino de Narnia, que ahora está dominado por el malvado Rey Miraz, que gobierna sin piedad. Los cuatro niños no tardarán en conocer un nuevo y extraño personaje: el joven Príncipe Caspian, heredero legítimo al trono que se ha visto obligado a esconderse ya que su tío Miraz trama su asesinato para colocar a su hijo recién nacido en el trono. Con la ayuda del bondadoso duende, un valiente ratón parlante llamado Reepicheep, de un tejón llamado Trufflehunter y de un Duende Negro, Nikabrik, los Narnianos, liderados por los poderosos caballeros Peter y Caspian, se embarcan en un extraordinario viaje para encontrar a Aslan, liberar Narnia del yugo tiránico de Miraz y restaurar la magia y la paz en el territorio.</info>
+</item>
+
+<item>
+<title>[COLOR white]Las crónicas de Narnia: La travesía del viajero del alba  [COLOR gold](2010)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://upstream.to/u1zc3ovccccd'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Fantastico,Aventuras,Familiar</genre>
+<year>2010</year>  
+<thumbnail>https://i.imgur.com/USiGyMV.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Tercera entrega de la saga literaria creada por C.S. Lewis. En esta ocasión, los hermanos Edmund y Lucy Pevensie y su primo Eustace embarcan en la nave El Viajero del Alba para buscar a los siete caballeros que han sido expulsados del reino por Miraz, el usurpador del trono de Narnia.</info>
+</item>
+
+
+
+
+
+
+</items>
