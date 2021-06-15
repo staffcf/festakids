@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+
+
+<item>
+<title>[COLOR red]MARVEL [COLOR white]Spider-Man [COLOR gold](2002)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/gktmgp0eovww'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Fantástico,Acción</genre>
+<year>2002</year>  
+<thumbnail>https://i.imgur.com/CSZwRaN.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Tras la muerte de sus padres, Peter Parker, un tímido estudiante, vive con su tía May y su tío Ben. Precisamente debido a su retraimiento no es un chico muy popular en el instituto. Un día le muerde una araña que ha sido modificada genéticamente; a la mañana siguiente, descubre estupefacto que posee la fuerza y la agilidad de ese insecto. Las aventuras del hombre araña se basan en el famoso cómic de Stan Lee y Steve Ditko.</info>
+</item>
+
+<item>
+<title>[COLOR red]MARVEL [COLOR white]Spider-Man 2 [COLOR gold](2004)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/msjtg0nwkpei'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<genre>Fantástico,Acción</genre>
+<year>2004</year>  
+<thumbnail>https://i.imgur.com/howPWOW.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Han pasado dos años desde que el tranquilo Peter Parker dejó a Mary Jane Watson, su gran amor, y decidió seguir asumir sus responsabilidades como Spider-Man. Peter debe afrontar nuevos desafíos mientras lucha contra el don y la maldición de sus poderes equilibrando sus dos identidades: el escurridizo superhéroe Spider-Man y el estudiante universitario. Las relaciones con las personas que más aprecia están ahora en peligro de ser descubiertas con la aparición del poderoso villano de múltiples tentáculos Doctor Octopus, "Doc Ock".</info>
+</item>
+
+<item>
+<title>[COLOR red]MARVEL [COLOR white]Spider-Man 3 [COLOR gold](2007)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/vmqaamgg89e3'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<genre>Fantástico,Acción</genre>
+<year>2007</year>  
+<thumbnail>https://i.imgur.com/qVlDEay.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Tercera entrega de las aventuras del joven Peter Parker (Maguire). Parece que Parker ha conseguido por fin el equilibrio entre su devoción por Mary Jane y sus deberes como superhéroe. Pero, de repente, su traje se vuelve negro y adquiere nuevos poderes; también él se transforma, mostrando el lado más oscuro y vengativo de su personalidad. Bajo la influencia del nuevo traje, Peter se convierte en un ser egoísta que sólo se preocupa por sí mismo. Tiene, pues, que afrontar un dilema: disfrutar de sus nuevos poderes o seguir siendo un héroe compasivo. Mientras tanto, sobre él se cierne la amenaza de dos temibles enemigos: Venom y el Hombre de Arena.</info>
+</item>
+
+<item>
+<title>[COLOR red]MARVEL [COLOR white]The Amazing Spider-Man [COLOR gold](2012)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/yifz60b1u1hc'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<genre>Fantástico,Acción</genre>
+<year>2012</year>  
+<thumbnail>https://i.imgur.com/Mg5jdG6.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Como la mayoría de los adolescentes de su edad, Peter está intentando descubrir quién es y cómo ha llegado a ser lo que es. En su viaje para atar los cabos de su pasado descubre un secreto que guardaba su padre, un secreto que finalmente dará forma a su destino como Spiderman.</info>
+</item>
+
+<item>
+<title>[COLOR red]MARVEL [COLOR white]The Amazing Spider-Man 2: El poder de Electro [COLOR gold](2014)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/j0e1dtpgwcwi '
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<genre>Fantástico,Acción</genre>
+<year>2014</year>  
+<thumbnail>https://i.imgur.com/7y6HEU7.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Peter Parker lleva una vida muy ocupada, compaginando su tiempo entre su papel como Spider-Man, acabando con los malos, y en el instituto con la persona a la que quiere, Gwen. Peter no ve el momento de graduarse. No ha olvidado la promesa que le hizo al padre de Gwen de protegerla, manteniéndose lejos de ella, pero es una promesa que simplemente no puede cumplir. Las cosas cambiarán para Peter cuando aparece un nuevo villano, Electro, y un viejo amigo, Harry Osborn, regresa, al tiempo que descubre nuevas pistas sobre su pasado.</info>
+</item>
+
+<item>
+<title>[COLOR red]MARVEL [COLOR white]Spider-Man: Homecoming [COLOR gold](2017)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://vidoza.net/0u602m671yfv'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<genre>Fantástico,Acción</genre>
+<year>2017</year>  
+<thumbnail>https://i.imgur.com/yZjhO4t.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Peter Parker (Tom Holland) comienza a experimentar su recién descubierta identidad como el superhéroe Spider-Man. Después de la experiencia vivida con los Vengadores, Peter regresa a casa, donde vive con su tía (Marisa Tomei). Bajo la atenta mirada de su mentor Tony Stark (Robert Downey Jr.), Peter intenta mantener una vida normal como cualquier joven de su edad, pero interrumpe en su rutina diaria el nuevo villano Vulture (Michael Keaton) y, con él, lo más importante de la vida de Peter comenzará a verse amenazado.</info>
+</item>
+
+<item>
+<title>[COLOR red]MARVEL [COLOR white]Spider-Man: Un nuevo universo [COLOR gold](2018)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/o5asywnctldc'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+<genre>Fantástico,Acción</genre>
+<year>2018</year>  
+<thumbnail>https://i.imgur.com/JynxRPM.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Trabajando en las sombras para seguir manteniendo su identidad en secreto, las relaciones se volverán más difíciles de compaginar con sus actividades de defensor de la justicia. Última pieza en el rompecabezas sobre la muerte de sus padres, Parker se enfrenta a dilemas personales, traumas de la infancia y descubrimientos que pueden cambiar por completo su percepción de la vida. El peligro no espera y apenas tendrá tiempo para reaccionar cuando se dé cuenta que un grupo de maleantes y villanos han unido fuerzas con el único propósito de verle destruido. Una batalla final que desvelará el destino de miles de personas. </info>
+</item>
+
+
+</items>
