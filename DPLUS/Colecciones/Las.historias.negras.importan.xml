@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+
+<item>
+<title>[COLOR white]Applucinate [/COLOR][COLOR gold](2014)[/COLOR]</title>    
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/qyc9mesdkytv'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Comedia,Fantastico</genre>
+<year>2014</year>  
+<thumbnail>https://i.imgur.com/KfH7RAs.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Zoey Stevens es una gran bailarina y una estudiante fabulosa que, de repente, se encuentra con que tiene que ir a clase en un instituto nuevo, unirse a un grupo de baile nuevo y algo torpe, y convivir con un nuevo padrastro cuando su madre vuelve a casarse. Para colmo, ¡tiene que convivir con tres hermanastros escandalosos y un perro incontrolable! Pero las cosas empiezan a cambiar cuando descarga una nueva aplicación de adiestramiento canino en su smartphone y empiezan a pasarles cosas extrañas a todos los chicos de alrededor... </info>
+</item>
+
+<item>
+<title>[COLOR white]Black Panther [COLOR gold](2018)[/COLOR]</title>   
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/34pwqp37bh8w'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Accion,Fantastico,Aventuras</genre>
+<year>2018</year>  
+<thumbnail>https://i.imgur.com/9YEaXlM.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>“Black Panther" cuenta la historia de T'Challa quien, después de los acontecimientos de "Capitán América: Civil War", vuelve a casa, a la nación de Wakanda, aislada y muy avanzada tecnológicamente, para ser proclamado Rey. Pero la reaparición de un viejo enemigo pone a prueba el temple de T'Challa como Rey y Black Panther ya que se ve arrastrado a un conflicto que pone en peligro todo el destino de Wakanda y del mundo.</info>
+</item>
+
+
+<item>
+<title>[COLOR white]Brujillizas [COLOR gold](2005)[/COLOR]</title>   
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/d848orlcbjgo'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Comedia,Drama,Fantastico</genre>
+<year>2005</year>  
+<thumbnail>https://i.imgur.com/5VdDpPP.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Dos brujas adolescentes que fueron separadas al nacer y fueron adoptadas por dos familias diferentes se encuentran en su cumpleaños número 21 y deben utilizar sus poderes para salvar al mundo en el que nacieron, donde su madre biológica vive todavía.</info>
+</item>
+
+<item>
+<title>[COLOR white]Brujillizas 2 [COLOR gold](2007)[/COLOR]</title>   
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/suj92pbv68dh '
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Comedia,Fantastico</genre>
+<year>2007</year>  
+<thumbnail>https://i.imgur.com/a96Kevp.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Después de descubrir sus poderes mágicos, ahora las hermanas comienzan a aprender más acerca de su destino, a pesar de tener dos agendas diferentes en mente. La alegre Camryn quiere abrazar el estilo de vida de reino en la tierra encantadora de Coventry, mientras la humilde y estudiosa Alex sólo quiere iniciar su vida universitaria. Sin embargo, al tratar de adaptarse la una a la otra y a sus diferencias, un conocido enemigo está al acecho, parece que su padre desaparecido, Aron, todavía puede estar vivo. </info>
+</item>
+
+<item>
+<title>[COLOR white]Elegidos para el triunfo [COLOR gold](1993)[/COLOR]</title>   
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/28fsu83wwwzk '
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Comedia,Aventuras,Familiar</genre>
+<year>1993</year>  
+<thumbnail>https://i.imgur.com/s8pvd0p.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Derice, Sanka, Junior y Yul son cuatro atletas jamaicanos, sin apenas recursos y sin tener conocimiento o adaptación a la nieve, pero dispuestos a alcanzar una difícil meta: ganar la medalla de oro nada menos que en los Juegos Olímpicos de invierno de Calgary, Canadá. Para ello reclutan como entrenador a un excampeón estadounidense (John Candy), quien aceptará la imposible tarea debido a su precaria situación económica.</info>
+</item>
+
+<item>
+<title>[COLOR white]La Reina de Katwe [COLOR gold](2016)[/COLOR]</title>   
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/ol5xu0ot093n'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Drama</genre>
+<year>2016</year>  
+<thumbnail>https://i.imgur.com/n7Aaysz.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Biopic de Phiona Mutesi, una joven ugandesa prodigio del ajedrez. Con 11 años ganó el campeonato juvenil de su país. Poco después pudo salir por primera vez de Uganda para ir a un torneo en Sudán. Y llegó a competir en la Olimpiada Mundial de la disciplina.</info>
+</item>
+
+<item>
+<title>[COLOR white]Salta! [COLOR gold](2007)[/COLOR]</title>   
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/f50zbqmtunuh'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Comedia</genre>
+<year>2007</year>  
+<thumbnail>https://i.imgur.com/YSIdRd4.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Izzy es una joven promesa del boxeo, que representa la tercera generación de una familia de boxeadores. Tanto su padre como su abuelo lograron hacerse con el ''Guante de oro'', premio por el que el chico entrena duramente. Su vecina, Mary, es la líder de un equipo de saltadores de cuerda que entrenan para ganar el campeonato del mundo. Cuando uno de los miembros del equipo se lesiona, Mary intentará convencer a Izzy para que le sustituya. El chaval mostrará grandes habilidades y realmente disfrutará con ello, pero la dura oposición de su padre, así como las burlas que recibirá por parte de sus compañeros de gimnasio, le harán plantear seriamente cual de sus dos aficiones debe abandonar: el boxeo o el salto de cuerda. </info>
+</item>
+
+<item>
+<title>[COLOR white]Sister Act 1:Una monja de cuidado [COLOR gold](1992)[/COLOR]</title>   
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://upstream.to/jfcmopzdr50u'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Comedia</genre>
+<year>1992</year>  
+<thumbnail>https://i.imgur.com/5PvzCcQ.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Deloris Van Cartier (Whoopi Goldberg) es una mediocre cantante de cabaret. Su amante Vince ha cometido un crimen, y ella decide acogerse al programa policial de protección de testigos. Así, Deloris consigue una nueva identidad como monja en un convento que, tan sólo con su presencia, perderá su habitual tranquilidad.</info>
+</item>
+
+
+<item>
+<title>[COLOR white]Sister Act 2:De vuelta al convento [COLOR gold](1993)[/COLOR]</title>   
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://mixdrop.to/e/3xfdyjng/'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Comedia</genre>
+<year>1993</year>  
+<thumbnail>https://i.imgur.com/KiLq0zn.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Deloris Van Cartier (Whoopi Goldberg) vuelve a colocarse los hábitos de la hermana Mary Clarence. Sus compañeras monjas y la Madre superiora Maggie Smith) necesitan ayuda para evitar el cierre de la escuela parroquial de Saint Francis. Con su colaboración y la del resto de las monjas, todos preparan la participación del colegio católico en un concurso de coros escolares. </info>
+</item>
+
+<item>
+<title>[COLOR white]Tiana y el sapo [COLOR gold](2009)[/COLOR]</title>   
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/rvll08szz4jy'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Animacion,Comedia,Musical,Infantil</genre>
+<year>2009</year>  
+<thumbnail></thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>En los años 20, la joven Tiana vive en el barrio francés de Nueva Orleáns durante la revolución del Jazz. Este film supone el regreso de Disney a la animación tradicional con un nuevo clásico oficial (tras 'Zafarrancho en el rancho'). </info>
+</item>
+
+<item>
+<title>[COLOR white]Titanes, hicieron historia [COLOR gold](2000)[/COLOR]</title>   
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/otneckixfcxg'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Drama</genre>
+<year>2000</year>  
+<thumbnail>https://i.imgur.com/xNTCWRg.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>En Virginia, el fútbol americano es un gran acontecimiento deportivo, un estilo de vida que nace en los institutos. En 1971, cuando el proceso de integración racial obliga a crear una escuela para blancos y negros, el deporte se verá sometido a una prueba de fuego. Herman Boone, un negro, sustituye al veterano y eficaz Bill Yoast como primer entrenador de los T.C. Williams High "titans". Juntos llevarán a cabo una gran tarea: convertir a una pandilla de chicos agresivos y desorientados en adultos responsables y sensibles, y, sobre todo, liberar a la ciudad de su intolerancia y sus prejuicios raciales.</info>
+</item>
+
+<item>
+<title>[COLOR white]Un pliegue en el tiempo [COLOR gold](2018)[/COLOR]</title>   
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/mv9jao20jtkj'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Fantastico,Ficción,Aventuras</genre>
+<year>2018</year>  
+<thumbnail>https://i.imgur.com/nOMdMkf.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Tras la desaparición de su padre, un científico, tres seres peculiares envían a la joven Meg, a su hermano Charles y a su amigo Calvin al espacio, para intentar encontrarlo. Adaptación de la novela de Madeleine L'Engle.</info>
+</item>
+
+
+
+</items>
