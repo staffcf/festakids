@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ <items>
+ 
+
+<item>
+<title>Brujillizas  -(2005)</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/0xlmvoqc5lji'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>   
+<genre>Comedia,Fantastico</genre>
+<year>2005</year>  
+<thumbnail>https://i.imgur.com/S7K4646.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Dos brujas adolescentes que fueron separadas al nacer y fueron adoptadas por dos familias diferentes se encuentran en su cumpleaños número 21 y deben utilizar sus poderes para salvar al mundo en el que nacieron, donde su madre biológica vive todavía.</info>
+</item>
+
+<item>
+<title>Brujillizas 2 -(2007)</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/qwi7rmrpymps'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>   
+<genre>Comedia,Fantastico</genre>
+<year>2007</year>  
+<thumbnail>https://i.imgur.com/a96Kevp.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Después de descubrir sus poderes mágicos, ahora las hermanas comienzan a aprender más acerca de su destino, a pesar de tener dos agendas diferentes en mente. La alegre Camryn quiere abrazar el estilo de vida de reino en la tierra encantadora de Coventry, mientras la humilde y estudiosa Alex sólo quiere iniciar su vida universitaria. Sin embargo, al tratar de adaptarse la una a la otra y a sus diferencias, un conocido enemigo está al acecho, parece que su padre desaparecido, Aron, todavía puede estar vivo. </info>
+</item>
+
+<item>
+<title>Camp Rock -(2008)</title> 
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/bkjdzkqtwcu0'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>  
+<genre>Comedia,Musical,Romance,Infantil</genre>
+<year>2008</year>  
+<thumbnail>https://i.imgur.com/3LwxkJT.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Mitchie López (Demi Lovato) es una simpática chica que está deseando poder entrar en un campamento de música. Su única opción es trabajar en la cocina del campamento, donde un día la escucha cantar, por casualidad, una atractiva estrella del pop llamada Shane Gray (Joe Jonas). Shane sólo escucha cantar a Mitchie, no la ve, así que el intenta descubir quién es ella... Telefilme juvenil musical del estilo de "High School Musical". También obtuvo un gran éxito en su pase por televisión en USA. </info>
+</item>
+
+<item>
+<title>Camp Rock 2 -(2008)</title> 
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/6vb3f4t9zcls'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>  
+<genre>Comedia,Musical,Infantil</genre>
+<year>2010</year>  
+<thumbnail>https://i.imgur.com/PWXHfvW.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>La secuela sigue la historia de Mitchie, Shane, Jason, Nate y sus amigos cuando retornan a "Camp Rock" con la intención de pasar otro verano de música y diversión. Sin embargo, ellos pronto aprenden que un nuevo campamento musical, "Camp Star" se ha abierto al otro lado del lago y ha atraído a muchos de los profesores y alumnos de Camp Rock, poniendo el futuro de ese campamento en riesgo. Cuando el director de Camp Star desafía a Camp Rock a una "batalla musical" para ver cuál de los dos campamentos tiene realmente el mejor talento musical, todos se preparan para la máxima batalla de bandas.</info>
+</item>
+
+<item>
+<title>Las Cheetah girls(2006)</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/9342powg9324'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>   
+<genre>Musical,Comedia</genre>
+<year>2006</year>  
+<thumbnail>https://i.imgur.com/RlDPvhI.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Las "chicas guepardo" -Galleria, Chanel, Aquanette y Dorinda- son cuatro adolescentes de Nueva York destinadas al estrellato. Intentan convencer a dos de las madres, Dorothea y Juanita, para que las acompañen a Barcelona, ya que quieren disfrutar de una "experiencia cultural y educacional", aunque su verdadero objetivo es participar en el Festival de las Nuevas Voces de la Música que se celebra allí. Ya en la ciudad condal, sus intereses personales comienzan a llevarlas en diferentes direcciones... </info>
+</item>
+
+<item>
+<title>Los magos de Waverly Place: Vacaciones en el Caribe  -(2009)</title> 
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://upstream.to/23hlu3207zqm'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>  
+<genre>Fantastico,Comedia,Aventuras</genre>
+<year>2009</year>  
+<thumbnail>https://i.imgur.com/MKxcHHF.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>La familia Russo se va de vacaciones al Caribe, al lugar donde los padres se conocieron. Alex Russo, cansada de que sus padres la controlen, lanza accidentalmente un hechizo deseando que sus padres nunca se hubiesen conocido, provocando que se olviden el uno del otro y de sus propios hijos. Alex y Justin deberán adentrarse en la selva para encontrar la Piedra de los Deseos, el único modo de revertir el hechizo. Mientras, Max, vigilará a sus padres para que no se metan en problemas...</info>
+</item>
+
+<item>
+<title>Mi hermana invisible -(2015)</title> 
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/2cxn6n1t2nmw'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>  
+<genre>Familia, Aventura, Comedia</genre>
+<year>2015</year>  
+<thumbnail>https://i.imgur.com/R2M7TPS.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Está basada en el libro My Invisible Sister de Beatrice Colin y Sara Pinto.1​
+
+La película trata de una estudiante que convierte a su hermana mayor en invisible a raíz de un fallido proyecto de ciencias.</info>
+</item>
+
+<item>
+<title>Programa de Protección de Princesas -(2009)</title> 
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/9t10gngfbgvs'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>  
+<genre>Comedia9</genre>
+<year>2009</year>  
+<thumbnail>https://i.imgur.com/DVibdzw.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>La princesa Rosalinda (Demi Lovato) es una chica que tiene a su alcance todos los lujos que van asociados a su condición de miembro de la realeza. Sin embargo, su vida cambia radicalmente cuando un malvado dictador quiere hacerse con el control de su país. Para proteger su vida, Rosalinda tendrá que acogerse al Programa de protección de princesas y se mudará a casa de uno de los agentes. Allí conocerá a la hija del agente, Carter Manson (Selena Gomez), quien ayudará a la princesa a ser una chica normal y corriente para poder pasar desapercibida.</info>
+</item>
+
+<item>
+<title>Soñando, soñando... triunfé patinando  -(2005)</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/3wiu3olztjeg'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>    
+<genre>Comedia9</genre>
+<year>2005</year>  
+<thumbnail>https://i.imgur.com/gdrp7OK.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Casey Carlyle (Michelle Trachtenberg) sueña con ser patinadora profesional, pero su madre Joan (Joan Cusack) sólo piensa en que vaya a la universidad de Harvard. Para complacerla, Casey empieza a hacer un trabajo sobre la física en el patinaje artístico, lo que le permitiría ir a la Universidad. Con este fin, acude a la pista de patinaje para observar a las mejores patinadoras de la ciudad y tomar apuntes para su trabajo, pero su pasión es tan grande que decide participar en las pruebas de patinaje, y para ello cuenta con la ayuda de la dura entrenadora Tina Harwood (Kim Cattrall).</info>
+</item>
+
+<item>
+<title>Starstruck: Mi novio es una súper estrella -(2010)</title> 
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/d81lx9n6rnqi'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>  
+<genre>Comedia, Romance, Musical</genre>
+<year>2010</year>  
+<thumbnail>https://i.imgur.com/t5hfWW3.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Jessica Olsen, una chica de Michigan, encuentra ridícula la actitud de su hermana, obsesionada con el cantante Christopher Wilde. Un día parte con su familia hacia Los Ángeles con la única idea de visitar a su abuela, mientras que su hermana pretende aprovechar el viaje para encontrar a Christopher Wilde. Pero el azar hará que sea Jessica la que le encuentre...</info>
+</item>
+
+<item>
+<title>Tu a Londres y yo a California  -(1998)</title>
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/wmlvh1apxmne'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>   
+<genre>Comedia,Familiar</genre>
+<year>1998</year>  
+<thumbnail>https://i.imgur.com/BnT6TnE.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Hallie y Annie, dos gemelas que se parecen como dos gotas de agua, fueron separadas poco después de nacer a causa del divorcio de sus padres. Hallie vive en Napa Valley con su padre, que es viticultor. Por su parte, Annie reside en Londres con su madre, una famosa diseñadora de trajes de novia. Ninguna de las dos conoce la existencia de la otra, pero el destino hace que se encuentren por casualidad en Maine, en un campamento de verano. Antes de volver a casa, las niñas urden un plan para conseguir reunir a sus padres, pero hay un inconveniente con el que no contaban: su padre planea casarse con otra mujer.</info>
+</item>
+
+<item>
+<title>Zombies -(2018)</title> 
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://vidoza.net/4kfkylaa9dfl'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>  
+<genre>Comedia, Musical, Romance</genre>
+<year>2018</year>  
+<thumbnail>https://i.imgur.com/E0LbMgU.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Los estudiantes de Zombietown son transferidos a una escuela secundaria en un pueblo suburbano preocupado por la uniformidad, las tradiciones y las motivaciones.</info>
+</item>
+
+<item>
+<title>Zombies 2 -(2020)</title> 
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://upstream.to/k8lqjlbi0z48'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>  
+<genre>Comedia,Musical</genre>
+<year>2020</year>  
+<thumbnail>https://i.imgur.com/RP3gDFq.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Cuenta las aventuras de Addison y Zed, dos estudiantes del instituto Seabrook High, cuyo romance se ve amenazado por la aparición de un grupo de hombres-lobo.</info>
+</item>
+
+
+
+
+
+
+
+
+
+
+<item>
+<title> -()</title> 
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>  
+<genre></genre>
+<year></year>  
+<thumbnail></thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info></info>
+</item>
+
+
+</items>
