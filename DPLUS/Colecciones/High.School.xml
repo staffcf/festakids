@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+
+
+<item>
+<title>[COLOR white]High School Musical [COLOR gold](2006)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://upstream.to/9m1fm2srpizo'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>   
+<genre>Musical,Comedia,Romance</genre>
+<year>2006</year>  
+<thumbnail>https://i.imgur.com/RrSRO2l.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Durante unas vacaciones de Navidad, los jóvenes Troy y Gabriella (dos adolescentes en principo con pocas cosas en común) se conocen. Ambos descubren su interés mutuo por la música durante un concurso de karaoke, y deciden presentarse al casting del musical del instituto.</info>
+</item>
+
+<item>
+<title>[COLOR white]High School Musical 2 [COLOR gold](2007)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://upstream.to/2hfh9iex4rtv'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>   
+<genre>Musical,Comedia,Romance</genre>
+<year>2007</year>  
+<thumbnail>https://i.imgur.com/bRf714i.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>El curso ha terminado y Troy Bolton, la superestrella del equipo de baloncesto de East High School, la inteligente Gabriella Montez y el resto de los Wildcats se preparan para disfrutar del verano más emocionante de sus vidas. Pero todo cambia cuando Sharpay Evans, la reina de los escenarios, utiliza los contactos de su "papá" para conseguir un trabajo a Troy en su súperexclusivo club de campo...</info>
+</item>
+
+<item>
+<title>[COLOR white]High School Musical 3: Fin de curso [COLOR gold](2008)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://playtube.ws/qbjxeekbnv2y'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>   
+<genre>Musical,Comedia,Romance</genre>
+<year>2008</year>  
+<thumbnail>https://i.imgur.com/1nbiKfB.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Tercera entrega del popular musical de Disney creado para televisión. Troy (Zac Efron) y Gabriella (Vanessa Hudgens), alumnos del último curso, se enfrentan a la perspectiva de la separación ya que ambos emprenderán caminos diferentes en la universidad. Con ayuda del resto de los Wildcats, realizan un elaborado musical de primavera que refleja sus experiencias, sus esperanzas y sus inquietudes ante el futuro...</info>
+</item>
+
+<item>
+<title>[COLOR white]High School Musical: El Musical: Especial Fistas [COLOR gold](2020)[/COLOR]</title>  
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://playtube.ws/qbjxeekbnv2y'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>   
+<genre>Musical,Comedia,Drama</genre>
+<year>2020</year>  
+<thumbnail>https://i.imgur.com/1nbiKfB.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<info>Episodio especial navideño protagonizado por el reparto de 'High School Musical: El musical: La serie' (2019). Un show cargado de temas navideños, de Hanukkah y Año Nuevo, en que el que además compartirán con todos anécdotas de vacaciones memorables de su infancia, mejores regalos, tradiciones favoritas, fotos familiares y propósitos de Año Nuevo.</info>
+</item>
+
+<item>
+<title>[COLOR white]High School Musical: La Serie [COLOR gold]La Serie[/COLOR]</title> 
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/High.school.musical.xml</externallink>
+<info>Serie de TV basada en las películas de Disney Channel High School Musical</info>
+<thumbnail>https://i.imgur.com/r6u8EqG.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+ 
+<item>
+<title>[COLOR white]High School Musical [COLOR gold]The Concert[/COLOR]</title>
+<link>$doregex[link_inteligente]</link>
+<regex>
+<name>link_inteligente</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]+[/COLOR] [COLOR white][link_inteligente.param1][/COLOR]</title>
+<link>$doregex[id]</link>
+<thumbnail>https://i.ytimg.com/vi/[link_inteligente.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+url = 'https://www.youtube.com/watch?v=N8_I457M43M&list=PLk3o5yMWoA0SGg6emLDR4a3kC9jfri_0_'
+import re,six
+$doregex[conector_youtube]
+
+]]></expres>
+<page></page>
+</regex> 
+<regex>
+<name>conector_youtube</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,base64,shutil,random
+from kodi_six import xbmc,xbmcgui,xbmcaddon,xbmcvfs
+from six.moves import urllib_request
+import six
+def GetLSProData(page_data,Cookie_Jar,m):
+    pasta = requests.get('https://raw.githubusercontent.com/Cristalazul/Cristalazul.io/main/CONECTORES/youtube', verify=False).text
+    return six.ensure_str(pasta)
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>id</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+  url = 'https://www.youtube.com/watch?v=[link_inteligente.param2]'
+  return resolveurl.resolve(url)
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/Fddd8jr.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+
+
+
+
+
+</items>
