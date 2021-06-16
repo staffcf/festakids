@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+
+
+
+<item>
+<title>[COLOR white]Toy Story [/COLOR][COLOR cyan](1995)[/COLOR]</title>    
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://upstream.to/mnx9jn4xmnrq'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Animacion</genre>
+<year>1995</year>  
+<thumbnail>https://i.imgur.com/cy5jjuO.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Los juguetes de Andy, un niño de 6 años, temen que haya llegado su hora y que un nuevo regalo de cumpleaños les sustituya en el corazón de su dueño. Woody, un vaquero que ha sido hasta ahora el juguete favorito de Andy, trata de tranquilizarlos hasta que aparece Buzz Lightyear, un héroe espacial dotado de todo tipo de avances tecnológicos. Woody es relegado a un segundo plano. Su constante rivalidad se transformará en una gran amistad cuando ambos se pierden en la ciudad sin saber cómo volver a casa. </info>
+</item>
+
+<item>
+<title>[COLOR white]Toy Story 2 [COLOR cyan](1999)[/COLOR]</title> 
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://upstream.to/dza7bpempf2s'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Animacion, Comedia, Fantastico, Aventuras, Infantil</genre>
+<year>1999</year>  
+<thumbnail>https://i.imgur.com/aYCRYtB.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Cuando Andy se va de campamento dejando solos a los juguetes, Al McWhiggin, un compulsivo coleccionista de juguetes valiosos, secuestra a Woody. Buzz Lightyear y los demás juguetes tendrán que actuar con rapidez si quieren rescatarlo. Durante la operación de rescate no sólo tendrán que afrontar múltiples peligros, sino que también vivirán divertidas situaciones.</info>
+</item>
+
+<item>
+<title>[COLOR white]Toy Story 3 [COLOR cyan](2010)[/COLOR]</title> 
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://upstream.to/w2rpw2t06iwe'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Animacion, Comedia, Aventuras</genre>
+<year>2010</year>   
+<thumbnail>https://i.imgur.com/oVYnody.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Cuando su dueño Andy se prepara para ir a la universidad, el vaquero Woody, el astronauta Buzz y el resto de sus amigos juguetes comienzan a preocuparse por su incierto futuro. Efectivamente todos acaban en una guardería, donde por ejemplo la muñeca Barbie conocerá al guapo Ken. Esta reunión de nuestros amigos con otros nuevos juguetes no será sino el principio de una serie de trepidantes y divertidas aventuras.</info>
+</item>
+ 
+<item>
+<title>[COLOR white]Toy Story 4 [/COLOR][COLOR cyan](2019)[/COLOR]</title>    
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://upstream.to/zxiy9vpxx1e1'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Fantastico, Accion, Ciencia Ficcion</genre>
+<year>2019</year>  
+<thumbnail>https://i.imgur.com/ltmYatQ.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Woody siempre ha tenido claro cuál es su labor en el mundo y su prioridad: cuidar a su dueño, ya sea Andy o Bonnie. Pero cuando Bonnie añade a Forky, un nuevo juguete de fabricación propia, a su habitación, arranca una nueva aventura que servirá para que los viejos y nuevos amigos le enseñen a Woody lo grande que puede ser el mundo para un juguete. </info>
+</item>
+
+<item>
+<title>[COLOR white]Toy Story: Lampe life [COLOR cyan](2020)[/COLOR]</title> 
+<link>$doregex[resolve]</link>
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import resolveurl
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://sbembed.com/e/'
+ streamLink = resolveurl.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex> 
+<genre>Animacion, Comedia, Aventuras</genre>
+<year>2020</year>   
+<thumbnail>https://pics.filmaffinity.com/toy_story_4_lamp_life_s-766103530-large.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+<info>Bo Peep vuelve por la puerta grande a Toy Story 4 de Disney y Pixar y protagoniza el nuevo cortometraje de animación de Pixar, Las aventuras de Bo Peep. Este corto relata qué fue de la vida de Bo desde que la vimos por última vez en Toy Story 2.</info>
+</item>
+
+
+
+</items>
