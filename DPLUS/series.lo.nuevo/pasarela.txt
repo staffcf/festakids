@@ -13,6 +13,15 @@
 </item>
 
 <item>
+<title>[COLOR darkgoldenrod]* [COLOR white]La misteriosa Sociedad Benedict [COLOR gold](Nuevo)[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/La.misteriosa.sociedad.benedict.txt</externallink>
+<info>Un grupo de huérfanos dotados de poderes es reclutado por un benefactor excéntrico para ir a una misión secreta.</info>
+<thumbnail>https://i.imgur.com/WoaWwqT.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+
+<item>
 <title>[COLOR darkgoldenrod]* [COLOR white]El Mister[/COLOR]</title>  
 <link>cristalazul</link>
 <externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/El.mister.xml</externallink>
