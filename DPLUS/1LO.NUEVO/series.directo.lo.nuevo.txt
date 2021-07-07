@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <items>
 
+
+<item>
+<title>[COLOR yellow]***** [COLOR white]JULIO[COLOR yellow]*****[/COLOR]</title>
+<thumbnail>https://i.imgur.com/e6pzq4Q.png</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<link>http://ignoreme</link>
+<externallink>https://pastebin.com/raw/</externallink>
+</item>
+
+<item>
+<title>[COLOR darkgoldenrod]* [COLOR white]Monstruos a la obra[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/Monstruos.a.la.obra.xml</externallink>
+<info>Continuación de la franquicia "Monstruos S.A.", en este caso en formato serie y para la plataforma Disney+. La historia arrancará 6 meses después de la película estrenada en 2001.</info>
+<thumbnail>https://i.imgur.com/QDR244q.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+
 <item>
 <title>[COLOR yellow]***** [COLOR white]JUNIO[COLOR yellow]*****[/COLOR]</title>
 <thumbnail>https://i.imgur.com/e6pzq4Q.png</thumbnail>
@@ -10,7 +28,43 @@
 </item>
 
 <item>
-<title>[COLOR darkgoldenrod]* [COLOR white]Marvel's Loki[/COLOR]</title>  
+<title>[COLOR darkgoldenrod]* [COLOR white]La misteriosa Sociedad Benedict [COLOR gold](Nuevo)[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/La.misteriosa.sociedad.benedict.txt</externallink>
+<info>Un grupo de huérfanos dotados de poderes es reclutado por un benefactor excéntrico para ir a una misión secreta.</info>
+<thumbnail>https://i.imgur.com/WoaWwqT.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR darkgoldenrod]* [COLOR white]El Mister[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/El.mister.xml</externallink>
+<info>Un temperamental entrenador de baloncesto universitario despedido de su trabajo, se ve obligado aceptar un trabajo de maestro y entrenamiento en un instituto privado de élite para chicas.</info>
+<thumbnail>https://i.imgur.com/FSQvanD.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR darkgoldenrod]* [COLOR white]High School musical: la serie[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/High.school.musical.xml</externallink>
+<info>Serie de TV basada en las películas de Disney Channel High School Musical</info>
+<thumbnail>https://i.imgur.com/r6u8EqG.jpg</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR darkgoldenrod]* [COLOR white]Con amor, Victor[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/Conamorvictor.xml</externallink>
+<info>Basada en la novela para jóvenes de Becky Albertalli 'Simon vs. the Homo Sapiens Agenda', que inspiró el largometraje 'Love, Simon'. 'Love, Victor' sigue a Victor, un nuevo estudiante de Creekwood High School en su autodescubrimiento, enfrentándose a problemas en casa, adaptándose a una nueva ciudad y descubriendo su orientación sexual. Cuando todo se le está haciendo difícil, se acerca a Simon para que le ayude a lidiar con los altibajos de su vida.</info>
+<thumbnail>https://i.imgur.com/zOgeZg0.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR darkgoldenrod]* [COLOR white]Marvel s Loki[/COLOR]</title>  
 <link>cristalazul</link>
 <externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/Marvel.loki.xml</externallink>
 <info>Loki es llevado ante la misteriosa organización llamada Autoridad de Variación Temporal después de robar el Cubo Cósmico durante los eventos de Avengers: Endgame (2019) y se le da a elegir enfrentarse a la eliminación de la realidad o ayudar contra una amenaza mayor,​ por lo cual Loki termina viajando a través del tiempo, alterando la historia humana.</info>
@@ -19,7 +73,7 @@
 </item>
 
 <item>
-<title>[COLOR gold]* [COLOR white]Marvel's M.o.d.o.k[/COLOR]</title>     
+<title>[COLOR gold]* [COLOR white]Marvel s M.o.d.o.k[/COLOR]</title>     
 <link>cristalazul</link>
 <externallink>https://raw.githubusercontent.com/Cristalazul/Cristalazul.io/main/SERIES/Series.Cristal/Marvel.M.o.d.o.k.txt</externallink>
 <info>El supervillano M.O.D.O.K ha perseguido durante mucho tiempo su sueño de conquistar el mundo. Pero después de años de reveses y fracasos luchando contra los héroes más poderosos de la Tierra, Derrocado como líder de A.I.M mientras lidia con el matrimonio y una vida familiar que se desmorona, M.O.D.O.K está listo para enfrentarse a su mayor desafío hasta ahora: una crisis de la mediana edad. </info>
@@ -45,14 +99,7 @@
 <fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
 </item>
  
-<item>
-<title>[COLOR darkgoldenrod]* [COLOR white]El Mister[/COLOR]</title>  
-<link>cristalazul</link>
-<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/El.mister.xml</externallink>
-<info>Un temperamental entrenador de baloncesto universitario despedido de su trabajo, se ve obligado aceptar un trabajo de maestro y entrenamiento en un instituto privado de élite para chicas.</info>
-<thumbnail>https://i.imgur.com/FSQvanD.jpg</thumbnail>
-<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
-</item>
+
 
 
 
