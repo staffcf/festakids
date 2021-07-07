@@ -39,7 +39,7 @@
 <item>
 <title>[B][COLOR gold]*[/COLOR] [COLOR gold]Lo nuevo D+ [COLOR white]Series[/COLOR][/B]</title>
 <link>$doregex[lou]</link>
-<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/1LO.NUEVO/series.directo.lo.nuevo.txt</externallink>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/series.lo.nuevo/pasarela.txt</externallink>
 <thumbnail>https://i.imgur.com/CO5BB5X.png</thumbnail>
 <fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
 </item>
