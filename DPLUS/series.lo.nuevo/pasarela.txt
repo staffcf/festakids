@@ -2,7 +2,22 @@
 <items>
 
 
+<item>
+<title>[COLOR yellow]***** [COLOR white]JULIO[COLOR yellow]*****[/COLOR]</title>
+<thumbnail>https://i.imgur.com/e6pzq4Q.png</thumbnail>
+<fanart>https://i.imgur.com/skkYoSC.jpg</fanart>
+<link>http://ignoreme</link>
+<externallink>https://pastebin.com/raw/</externallink>
+</item>
 
+<item>
+<title>[COLOR darkgoldenrod]* [COLOR white]Monstruos a la obra[/COLOR]</title>  
+<link>cristalazul</link>
+<externallink>https://raw.githubusercontent.com/FESTAKIDS/festakids/main/DPLUS/SERIES/Monstruos.a.la.obra.xml</externallink>
+<info>Continuación de la franquicia "Monstruos S.A.", en este caso en formato serie y para la plataforma Disney+. La historia arrancará 6 meses después de la película estrenada en 2001.</info>
+<thumbnail>https://i.imgur.com/QDR244q.jpg</thumbnail>
+<fanart>https://i.imgur.com/yNfc6m7.jpg</fanart>
+</item>
 
 <item>
 <title>[COLOR yellow]***** [COLOR white]JUNIO[COLOR yellow]*****[/COLOR]</title>
