@@ -1,6 +1,6 @@
 0especial=""
 1felicitacion="https://raw.githubusercontent.com/FESTAKIDS/festakids/main/FESTAKIDS/Felicitaciones"
-2dplus="http://bit.ly/festakids_DP"
+2dplus="http://bit.ly/festakids_DP$$LSProEncKey= $$"
 3festaeduca="http://bit.ly/festaeduca"
 4tv=""
 5cine="https://bit.ly/festakids_cine"
