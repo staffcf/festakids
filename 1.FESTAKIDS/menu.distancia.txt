@@ -1,5 +1,5 @@
 0especial=""
-1felicitacion="https://raw.githubusercontent.com/FESTAKIDS/festakids/main/FESTAKIDS/Felicitaciones"
+1felicitacion="http://bit.ly/festakids_felicitaciones"
 2dplus="http://bit.ly/festakids_DP$$LSProEncKey= $$"
 3festaeduca="http://bit.ly/festaeduca"
 4tv=""
