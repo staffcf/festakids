@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+
+
+<item>
+<title>[B][COLOR darkgoldenrod]* [COLOR white]TV KIDS[/COLOR][/B]</title>
+<link>https://pastebin.com/raw/2HaAUaQX</link>
+<externallink>$doregex[final_lista]</externallink>
+<regex>
+<name>final_lista</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url='https://www.dropbox.com/s/xs2h5e872xw6qhj/tvkids.spain.xml?dl=1'):#cPrLItsLTfakl
+  pastebin = 'https://pastebin.com/u/Hectobo roba'
+  pastebin = 'https://pastebin.com/raw/zA16Z1sa'
+  pastebin = 'https://pastebin.com/raw/Abn4kQwe'
+  pastebin = 'https://pastebin.com/raw/ZpvBwAqN'
+  if 'username' in url:
+    return url.replace('amp;', '')
+  else:
+    return url+''
+def revist_dag(page_data):
+   final_url = ''
+   if '127.0.0.1' in page_data:
+       final_url = re_me(page_data, '&ver_t=([^&]+)&') + ' live=true timeout=15 playpath=' + re_me(page_data, '\\?y=([a-zA-Z0-9-_\\.@]+)')
+ 
+   if re_me(page_data, 'token=([^&]+)&') != '':
+       final_url = final_url + '?token=' + re_me(page_data, 'token=([^&]+)&')
+   elif re_me(page_data, 'wmsAuthSign%3D([^%&]+)') != '':
+       final_url = re_me(page_data, '&ver_t=([^&]+)&') + '?wmsAuthSign=' + re_me(page_data, 'wmsAuthSign%3D([^%&]+)') + '==/mp4:' + re_me(page_data, '\\?y=([^&]+)&')
+   else:
+       final_url = re_me(page_data, 'HREF="([^"]+)"')
+ 
+   if 'dag1.asx' in final_url:
+       return get_dag_url(final_url)
+ 
+   if 'devinlivefs.fplive.net' not in final_url:
+       final_url = final_url.replace('devinlive', 'flive')
+   if 'permlivefs.fplive.net' not in final_url:
+       final_url = final_url.replace('permlive', 'flive')
+   return ''
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://i.imgur.com/9F04l7c.png</thumbnail>
+<fanart>https://i.imgur.com/octb2sN.jpg</fanart>
+</item>
+
+
+</items>
