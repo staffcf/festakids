@@ -13,7 +13,7 @@
 <fanart>https://i.imgur.com/zMg28gY.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
-url = 'http://www.youtube.com/watch?v=u67yCNRi-qI&amp;list=PLtRwSCbGsS0XGkpgCi4iVWGOvtYK5GEJK'
+url = 'http://www.youtube.com/watch?v=u67yCNRi-qI&list=PLtRwSCbGsS0XGkpgCi4iVWGOvtYK5GEJK'
 import re,requests,xbmc
 def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
  
