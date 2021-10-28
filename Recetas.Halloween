@@ -15,7 +15,7 @@
 <fanart>https://i.imgur.com/zMg28gY.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
-url = 'http://www.youtube.com/watch?v=luEJEXGdr-I&amp;list=PLtRwSCbGsS0V6DD-_N7i32aeTcScg3_3t'
+url = 'http://www.youtube.com/watch?v=luEJEXGdr-I&list=PLtRwSCbGsS0V6DD-_N7i32aeTcScg3_3t'
 import re,requests,xbmc
 def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
  
@@ -89,7 +89,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://i.imgur.com/zMg28gY.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
-url = 'http://www.youtube.com/watch?v=JwFLS_s50hk&amp;list=PLtRwSCbGsS0UmcOmAdXb3U0hv17YxDk99'
+url = 'http://www.youtube.com/watch?v=JwFLS_s50hk&list=PLtRwSCbGsS0UmcOmAdXb3U0hv17YxDk99'
 import re,requests,xbmc
 def GetLSProData(page_data,Cookie_Jar,m,url=url):#cPrLItsLTfakl
  
